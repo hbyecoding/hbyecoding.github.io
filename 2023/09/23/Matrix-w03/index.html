@@ -10,12 +10,12 @@
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="## Properties on the Matrix Inverse Inner Product $ &lt;u,v&gt;$ \[&lt;A,B&gt; &#x3D; &lt;\text{vec}(A), \text{vec}(B)&gt; &#x3D; tr(A^HB) \] 矩阵的共轭转置 Frobenius 范数   Alt text    Alt text    Al">
+  <meta name="description" content="## Properties on the Matrix Inverse Inner Product &lt;u,v&gt; &lt;u,v&gt;&lt;u,v&gt; &lt;A,B&gt;&#x3D;&lt;vec(A),vec(B)&gt;&#x3D;tr(AHB)&lt;A,B&gt; &#x3D; &lt;(A), (B)&gt; &#x3D; tr(A^HB)&lt;A,B&gt;&#x3D;&lt;vec(A),vec">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Matrix-w03">
 <meta property="og:url" content="https://hbyecoding.github.io/2023/09/23/Matrix-w03/index.html">
 <meta property="og:site_name" content="Hongbo Website">
-<meta property="og:description" content="## Properties on the Matrix Inverse Inner Product $ &lt;u,v&gt;$ \[&lt;A,B&gt; &#x3D; &lt;\text{vec}(A), \text{vec}(B)&gt; &#x3D; tr(A^HB) \] 矩阵的共轭转置 Frobenius 范数   Alt text    Alt text    Al">
+<meta property="og:description" content="## Properties on the Matrix Inverse Inner Product &lt;u,v&gt; &lt;u,v&gt;&lt;u,v&gt; &lt;A,B&gt;&#x3D;&lt;vec(A),vec(B)&gt;&#x3D;tr(AHB)&lt;A,B&gt; &#x3D; &lt;(A), (B)&gt; &#x3D; tr(A^HB)&lt;A,B&gt;&#x3D;&lt;vec(A),vec">
 <meta property="og:locale">
 <meta property="og:image" content="https://hbyecoding.github.io/2023/09/23/Matrix-w03/image-7.png">
 <meta property="og:image" content="https://hbyecoding.github.io/2023/09/23/Matrix-w03/image-8.png">
@@ -37,7 +37,16 @@
   
     <link rel="apple-touch-icon" href="/apple-touch-icon-180x180.png">
   
-  <link rel="stylesheet" type="text/css" href="/./main.a5fda8.css">
+  <!--
+ * @Author: hbyecoding hongboye@mail.ustc.edu.cn
+ * @Date: 2023-11-09 22:53:23
+ * @LastEditors: hbyecoding hongboye@mail.ustc.edu.cn
+ * @LastEditTime: 2023-11-22 21:55:49
+ * @FilePath: \hongbo.github.io\themes\yilia-plus\layout\_partial\css.ejs
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<link rel="stylesheet" type="text/css" href="/./main.a5fda8.css">
+<link href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" rel="stylesheet" />
   <style type="text/css">
     
     #container.show {
@@ -57,11 +66,7 @@
 
   
 
-<!-- hexo injector head_end start -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
-<!-- hexo injector head_end end --></head>
+</head>
 
 <body>
   <div id="container" q-class="show:isCtnShow">
@@ -120,16 +125,6 @@
 												title="GitHub" target="_blank"><i class="icon-github"></i></a>
 					
 				
-					
-						<a class="gitee" href="#" 
-												title="码云" target="_blank"><i class="icon-gitee"></i></a>
-					
-				
-					
-						<a class="jianshu" href="#" 
-												title="简书" target="_blank"><i class="icon-jianshu"></i></a>
-					
-				
 			</div>
 		
 		</nav>
@@ -183,16 +178,6 @@
 						
 						<a class="github" target="_blank" 
 							href="#" title="GitHub"><i class="icon-github"></i></a>
-						
-					
-						
-						<a class="gitee" target="_blank" 
-							href="#" title="码云"><i class="icon-gitee"></i></a>
-						
-					
-						
-						<a class="jianshu" target="_blank" 
-							href="#" title="简书"><i class="icon-jianshu"></i></a>
 						
 					
 				</div>
@@ -255,7 +240,7 @@
       <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
       <i class="icon-statistics"></i>
       <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">163字</span>
+      <span class="post-count">209字</span>
     </span>
   </span>
 
@@ -279,9 +264,71 @@
  -->
 <p>## Properties on the Matrix Inverse</p>
 <h2 id="inner-product">Inner Product</h2>
-<p>$ &lt;u,v&gt;$ <span class="math display">\[&lt;A,B&gt; =
-&lt;\text{vec}(A), \text{vec}(B)&gt; = tr(A^HB)
-\]</span></p>
+<p><span class="katex"><span
+class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&lt;</mo><mi>u</mi><mo separator="true">,</mo><mi>v</mi><mo>&gt;</mo></mrow><annotation encoding="application/x-tex">
+&lt;u,v&gt;</annotation></semantics></math></span><span
+class="katex-html" aria-hidden="true"><span class="base"><span
+class="strut"
+style="height:0.5782em;vertical-align:-0.0391em;"></span><span
+class="mrel">&lt;</span><span class="mspace"
+style="margin-right:0.2777777777777778em;"></span></span><span
+class="base"><span class="strut"
+style="height:0.7335400000000001em;vertical-align:-0.19444em;"></span><span
+class="mord mathdefault">u</span><span class="mpunct">,</span><span
+class="mspace" style="margin-right:0.16666666666666666em;"></span><span
+class="mord mathdefault" style="margin-right:0.03588em;">v</span><span
+class="mspace" style="margin-right:0.2777777777777778em;"></span><span
+class="mrel">&gt;</span></span></span></span> <span
+class="katex-display"><span class="katex"><span
+class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&lt;</mo><mi>A</mi><mo separator="true">,</mo><mi>B</mi><mo>&gt;</mo><mo>=</mo><mo>&lt;</mo><mtext>vec</mtext><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo><mo separator="true">,</mo><mtext>vec</mtext><mo stretchy="false">(</mo><mi>B</mi><mo stretchy="false">)</mo><mo>&gt;</mo><mo>=</mo><mi>t</mi><mi>r</mi><mo stretchy="false">(</mo><msup><mi>A</mi><mi>H</mi></msup><mi>B</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">&lt;A,B&gt;
+= &lt;(A), (B)&gt; =
+tr(A^HB)</annotation></semantics></math></span><span class="katex-html"
+aria-hidden="true"><span class="base"><span class="strut"
+style="height:0.5782em;vertical-align:-0.0391em;"></span><span
+class="mrel">&lt;</span><span class="mspace"
+style="margin-right:0.2777777777777778em;"></span></span><span
+class="base"><span class="strut"
+style="height:0.8777699999999999em;vertical-align:-0.19444em;"></span><span
+class="mord mathdefault">A</span><span class="mpunct">,</span><span
+class="mspace" style="margin-right:0.16666666666666666em;"></span><span
+class="mord mathdefault" style="margin-right:0.05017em;">B</span><span
+class="mspace" style="margin-right:0.2777777777777778em;"></span><span
+class="mrel">&gt;</span></span><span class="base"><span class="strut"
+style="height:0.36687em;vertical-align:0em;"></span><span
+class="mrel">=</span></span><span class="base"><span class="strut"
+style="height:0.5782em;vertical-align:-0.0391em;"></span><span
+class="mrel">&lt;</span><span class="mspace"
+style="margin-right:0.2777777777777778em;"></span></span><span
+class="base"><span class="strut"
+style="height:1em;vertical-align:-0.25em;"></span><span
+class="mord text"><span class="mord">vec</span></span><span
+class="mopen">(</span><span class="mord mathdefault">A</span><span
+class="mclose">)</span><span class="mpunct">,</span><span class="mspace"
+style="margin-right:0.16666666666666666em;"></span><span
+class="mord text"><span class="mord">vec</span></span><span
+class="mopen">(</span><span class="mord mathdefault"
+style="margin-right:0.05017em;">B</span><span
+class="mclose">)</span><span class="mspace"
+style="margin-right:0.2777777777777778em;"></span><span
+class="mrel">&gt;</span></span><span class="base"><span class="strut"
+style="height:0.36687em;vertical-align:0em;"></span><span
+class="mrel">=</span><span class="mspace"
+style="margin-right:0.2777777777777778em;"></span></span><span
+class="base"><span class="strut"
+style="height:1.1413309999999999em;vertical-align:-0.25em;"></span><span
+class="mord mathdefault">t</span><span class="mord mathdefault"
+style="margin-right:0.02778em;">r</span><span
+class="mopen">(</span><span class="mord"><span
+class="mord mathdefault">A</span><span class="msupsub"><span
+class="vlist-t"><span class="vlist-r"><span class="vlist"
+style="height:0.8913309999999999em;"><span
+style="top:-3.113em;margin-right:0.05em;"><span class="pstrut"
+style="height:2.7em;"></span><span
+class="sizing reset-size6 size3 mtight"><span
+class="mord mathdefault mtight"
+style="margin-right:0.08125em;">H</span></span></span></span></span></span></span></span><span
+class="mord mathdefault" style="margin-right:0.05017em;">B</span><span
+class="mclose">)</span></span></span></span></span></p>
 <p>矩阵的共轭转置</p>
 <p>Frobenius 范数</p>
 <figure>
@@ -307,9 +354,68 @@ alt="Alt text" />
 <li>max number of linearly independent rows/cols</li>
 <li>rank(A) = dim row(A) = dim col(A)</li>
 </ol>
-<p><span class="math display">\[row(A) = \{ y^TA\}\]</span> <span
-class="math display">\[col(A) = \{ Ax\}\]</span> <span
-class="math display">\[ rank{ AX} ??  rank(A)\]</span> 什么满秩的时候/
+<p><span class="katex-display"><span class="katex"><span
+class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mi>o</mi><mi>w</mi><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">{</mo><msup><mi>y</mi><mi>T</mi></msup><mi>A</mi><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">row(A)
+= { y^TA}</annotation></semantics></math></span><span class="katex-html"
+aria-hidden="true"><span class="base"><span class="strut"
+style="height:1em;vertical-align:-0.25em;"></span><span
+class="mord mathdefault" style="margin-right:0.02778em;">r</span><span
+class="mord mathdefault">o</span><span class="mord mathdefault"
+style="margin-right:0.02691em;">w</span><span
+class="mopen">(</span><span class="mord mathdefault">A</span><span
+class="mclose">)</span><span class="mspace"
+style="margin-right:0.2777777777777778em;"></span><span
+class="mrel">=</span><span class="mspace"
+style="margin-right:0.2777777777777778em;"></span></span><span
+class="base"><span class="strut"
+style="height:1.1413309999999999em;vertical-align:-0.25em;"></span><span
+class="mopen">{</span><span class="mord"><span class="mord mathdefault"
+style="margin-right:0.03588em;">y</span><span class="msupsub"><span
+class="vlist-t"><span class="vlist-r"><span class="vlist"
+style="height:0.8913309999999999em;"><span
+style="top:-3.113em;margin-right:0.05em;"><span class="pstrut"
+style="height:2.7em;"></span><span
+class="sizing reset-size6 size3 mtight"><span
+class="mord mathdefault mtight"
+style="margin-right:0.13889em;">T</span></span></span></span></span></span></span></span><span
+class="mord mathdefault">A</span><span
+class="mclose">}</span></span></span></span></span> <span
+class="katex-display"><span class="katex"><span
+class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mi>o</mi><mi>l</mi><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">{</mo><mi>A</mi><mi>x</mi><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">col(A)
+= { Ax}</annotation></semantics></math></span><span class="katex-html"
+aria-hidden="true"><span class="base"><span class="strut"
+style="height:1em;vertical-align:-0.25em;"></span><span
+class="mord mathdefault">c</span><span
+class="mord mathdefault">o</span><span class="mord mathdefault"
+style="margin-right:0.01968em;">l</span><span
+class="mopen">(</span><span class="mord mathdefault">A</span><span
+class="mclose">)</span><span class="mspace"
+style="margin-right:0.2777777777777778em;"></span><span
+class="mrel">=</span><span class="mspace"
+style="margin-right:0.2777777777777778em;"></span></span><span
+class="base"><span class="strut"
+style="height:1em;vertical-align:-0.25em;"></span><span
+class="mopen">{</span><span class="mord mathdefault">A</span><span
+class="mord mathdefault">x</span><span
+class="mclose">}</span></span></span></span></span> <span
+class="katex-display"><span class="katex"><span
+class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mi>a</mi><mi>n</mi><mi>k</mi><mrow><mi>A</mi><mi>X</mi></mrow><mo stretchy="false">?</mo><mo stretchy="false">?</mo><mi>r</mi><mi>a</mi><mi>n</mi><mi>k</mi><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">rank{
+AX} ?? rank(A)</annotation></semantics></math></span><span
+class="katex-html" aria-hidden="true"><span class="base"><span
+class="strut" style="height:1em;vertical-align:-0.25em;"></span><span
+class="mord mathdefault" style="margin-right:0.02778em;">r</span><span
+class="mord mathdefault">a</span><span
+class="mord mathdefault">n</span><span class="mord mathdefault"
+style="margin-right:0.03148em;">k</span><span class="mord"><span
+class="mord mathdefault">A</span><span class="mord mathdefault"
+style="margin-right:0.07847em;">X</span></span><span
+class="mclose">?</span><span class="mclose">?</span><span
+class="mord mathdefault" style="margin-right:0.02778em;">r</span><span
+class="mord mathdefault">a</span><span
+class="mord mathdefault">n</span><span class="mord mathdefault"
+style="margin-right:0.03148em;">k</span><span
+class="mopen">(</span><span class="mord mathdefault">A</span><span
+class="mclose">)</span></span></span></span></span> 什么满秩的时候/
 左乘一个列满秩 或者 右乘一个 行满秩的矩阵 不改变 A的rank <img
 src="image-5.png" alt="Alt text" /></p>
 <p><img src="image-7.png" alt="Alt text" /> 这里面其实有A = XY
@@ -345,7 +451,7 @@ alt="Alt text" /></p>
           <span class="tooltip-content">
             <span class="tooltip-text">
               <span class="tooltip-inner">
-                <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i
+                <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢温柔的你请我喝咖啡<i
                     class="icon icon-quo-right"></i></p>
                 <div class="reward-box">
                   
@@ -356,7 +462,7 @@ alt="Alt text" /></p>
                   
                   
                   <div class="reward-box-item">
-                    <img class="reward-img" src="/img/weixin.png">
+                    <img class="reward-img" src="/img/weipay.jpg">
                     <span class="reward-type">微信</span>
                   </div>
                   
@@ -525,7 +631,7 @@ alt="Alt text" /></p>
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2018-2023 <a href="https://hbyecoding.github.io/" target="_blank">hongbo</a>
+    		&copy; 2023 <a href="https://hbyecoding.github.io/" target="_blank">hongbo</a>
     	</div>
       	<div class="footer-right">
 			
@@ -580,10 +686,10 @@ alt="Alt text" /></p>
   var titleTime;
   document.addEventListener("visibilitychange", function () {
     if (document.hidden) {
-      document.title = "(つェ⊂) 我藏好了哦~ " + originTitle;
+      document.title = "给认真coding的你点赞 " + originTitle;
       clearTimeout(titleTime);
     } else {
-      document.title = "(*´∇｀*) 被你发现啦~ " + originTitle;
+      document.title = "HONGBO 被你发现啦~ " + originTitle;
       titleTime = setTimeout(function () {
         document.title = originTitle;
       }, 2000);
@@ -650,6 +756,10 @@ alt="Alt text" /></p>
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">test</a>
               </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">数学, test</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
@@ -700,17 +810,17 @@ alt="Alt text" /></p>
         <ul class="search-ul">
           
             <li class="search-li">
-              <a href="https://zhousiwei.gitee.io/ibooks/" target="_blank" 
-                class="search-title" title="记录工作和学习过程中的笔记：Java、前端开发、Hexo博客、聚合支付、Linux笔记、ElasticSearch、ELK日志分析">
+              <a href="https://hbyecoding.github.io/" target="_blank" 
+                class="search-title" >
                 
-                  <img src="https://zhousiwei.gitee.io/ibooks/favicon.ico">
+                  <i class="icon-link icon"></i>
                 
                 技术笔记
               </a>
             </li>
           
             <li class="search-li">
-              <a href="https://github.com/JoeyBling" target="_blank" 
+              <a href="https://github.com/hbyecoding" target="_blank" 
                 class="search-title" >
                 
                   <i class="icon-link icon"></i>
@@ -720,27 +830,7 @@ alt="Alt text" /></p>
             </li>
           
             <li class="search-li">
-              <a href="https://gitee.com/zhousiwei" target="_blank" 
-                class="search-title" >
-                
-                  <i class="icon-link icon"></i>
-                
-                码云
-              </a>
-            </li>
-          
-            <li class="search-li">
-              <a href="https://www.jianshu.com/u/02cbf31a043a" target="_blank" 
-                class="search-title" >
-                
-                  <i class="icon-link icon"></i>
-                
-                简书
-              </a>
-            </li>
-          
-            <li class="search-li">
-              <a href="https://blog.csdn.net/qq_30930805" target="_blank" 
+              <a href="https://blog.csdn.net/csdnyehobo" target="_blank" 
                 class="search-title" >
                 
                   <i class="icon-link icon"></i>
