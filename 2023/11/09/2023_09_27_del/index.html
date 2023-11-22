@@ -10,12 +10,10 @@
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="\documentclass[a4paper,12pt]{ctexart}\usepackage{geometry}\usepackage{amsmath}\usepackage{amssymb}\geometry{left&#x3D;2cm,right&#x3D;2cm,top&#x3D;2cm,bottom&#x3D;2cm}\usepackage[ruled, linesnumbered, vlined]{algorithm2e}">
-<meta property="og:type" content="article">
+  <meta property="og:type" content="article">
 <meta property="og:title" content="Hongbo Website">
 <meta property="og:url" content="https://hbyecoding.github.io/2023/11/09/2023_09_27_del/index.html">
 <meta property="og:site_name" content="Hongbo Website">
-<meta property="og:description" content="\documentclass[a4paper,12pt]{ctexart}\usepackage{geometry}\usepackage{amsmath}\usepackage{amssymb}\geometry{left&#x3D;2cm,right&#x3D;2cm,top&#x3D;2cm,bottom&#x3D;2cm}\usepackage[ruled, linesnumbered, vlined]{algorithm2e}">
 <meta property="og:locale">
 <meta property="article:published_time" content="2023-11-09T14:29:59.398Z">
 <meta property="article:modified_time" content="2023-11-09T14:29:59.675Z">
@@ -220,37 +218,7 @@
     
   <div class="article-entry" itemprop="articleBody">
     
-    <p>\documentclass[a4paper,12pt]{ctexart}<br>\usepackage{geometry}<br>\usepackage{amsmath}<br>\usepackage{amssymb}<br>\geometry{left=2cm,right=2cm,top=2cm,bottom=2cm}<br>\usepackage[ruled, linesnumbered, vlined]{algorithm2e}<br>\title{概率统计 作业2}<br>\date{}<br>\begin{document}<br>\maketitle</p>
-<p>\textbf{共7题10问, 每问5分, 总计50分.}</p>
-<ol>
-<li>在课上讨论的赌徒的例子中, 假设$X_0$有未知的初始分布使得<br>\begin{equation}<br>q_i = \mathbb{P}(X_0 = i) &gt; 0, \quad i = 0, \cdots, N.<br>\end{equation}<br>(仅仅为方便讨论, 最终结论并不依赖于各$q_i$的值.) 假设游戏可以一直继续下去, 事件<br>\begin{equation}<br>A_k = \{\omega \in \Omega: \inf \{ n \ge k: X_n(\omega) = 0\} &gt; \inf \{ n\ge k: X_n(\omega) = N\} \}, \quad k = 1, 2.<br>\end{equation}<br>事件$A_k$代表了``从第$k$轮游戏结束后开始算, 赌徒在输光之前持有过$N$枚硬币’’, 而待求的概率<br>\begin{equation}<br>f_i = \mathbb{P}(A_1 | X_0 = i).<br>\end{equation}<br>由于$X_n$为马氏链, 事件$A_1$只取决于$X_1, X_2, \cdots$, 故概率$f_i$\emph{不依赖于}$X_0$的具体分布.<br>考虑事件$A_2$与$A_1$的关系:<br>\begin{equation}<br>\mathbb{P}(A_2 | X_1 = j, X_0 = i) = \mathbb{P}(A_2 | X_1 = j) = \mathbb{P}(A_1 | X_0 = j).<br>\end{equation}<br>其中, 第一个等号成立的原因在于马氏链的性质(事件$A_2$只取决于$X_2, X_3, \cdots$), 而第二个等号成立的原因在于将第一次(独立的)游戏除去以后的问题与原问题等价.</li>
-</ol>
-<p>利用全概率公式等已有知识, 证明关于$f_i$的等式(即课件中的(18))<br>\begin{equation}<br>f_i = \sum_{j=0}^{N} p_{ij} f_j, \quad i=1,\cdots, N-1,<br>\end{equation}<br>其中$p_{ij}$为马氏链$X_n$的转移概率.</p>
-<p>\indent</p>
-<ol>
-<li>设随机变量$X \sim \mathcal{N}(0, 1)$, 随机变量$Z$服从如下离散分布:<br>\begin{equation}<br>\mathbb{P}(Z=-1) = \mathbb{P}(Z=1) = \frac{1}{2}.<br>\end{equation}<br>设随机变量$Y$为$X$与$Z$的乘积.<br>\begin{enumerate}<br>\item [(1)] 计算出$Y$的累积分布函数或者概率密度函数.<br>\item [(2)] 计算出$X$与$Y$的协方差.<br>\end{enumerate}<br>注: 由于事件$X \in (-1, 1)$与事件$Y \in (-1, 1)$相同, 而且其概率在区间$(0, 1)$之内, 故$X$与$Y$不独立.</li>
-</ol>
-<p>\indent</p>
-<ol>
-<li>已知$\rho \in (-1, 1)$, $X_1$和$X_2$为独立的服从标准正态分布的随机变量.<br>设<br>\begin{align}<br>Y_1 &amp;= \sqrt{\frac{1+\rho}{2}} X_1 + \sqrt{\frac{1-\rho}{2}} X_2, \\<br>Y_2 &amp;= \sqrt{\frac{1+\rho}{2}} X_1 - \sqrt{\frac{1-\rho}{2}} X_2.<br>\end{align}<br>\begin{enumerate}<br>\item [(1)] 通过计算$X_1$和$X_2$的联合分布, 证明随机向量$\vec{X} = (X_1, X_2)$服从二维标准多元正态分布.<br>(由此可以推出, 随机向量$\vec{Y} = (Y_1, Y_2)$服从二维多元正态分布.)<br>\item [(2)] 计算出随机向量$ \vec{Y} = (Y_1, Y_2)$服从的分布的概率密度函数.<br>\end{enumerate}</li>
-</ol>
-<p>\indent</p>
-<ol>
-<li>设$X_1$和$X_2$为独立且服从$(0,1)$上均匀分布的随机变量.<br>考虑Box—Muller变换:<br>\begin{align}<br>Y_1 &amp;= \sqrt{-2 \ln X_1} \cos (2 \pi X_2), \\<br>Y_2 &amp;= \sqrt{-2 \ln X_1} \sin (2 \pi X_2).<br>\end{align}<br>用$Y_1$和$Y_2$表示出$X_1$和$X_2$, 并计算出雅可比行列式<br>\begin{equation}<br>\frac{\partial(X_1, X_2)}{\partial(Y_1, Y_2)}<br>\end{equation}<br>从而验证$(Y_1, Y_2)$服从二维标准多元正态分布.</li>
-</ol>
-<p>\indent</p>
-<ol>
-<li>设$X_1, \cdots, X_n$为独立同分布的\emph{随机变量}, 它们的期望为$\mu$, 方差为$\sigma^2$.<br>设<br>\begin{equation}<br>\bar{X} = \frac{1}{n}(X_1 + \cdots + X_n),<br>\end{equation}<br>\begin{equation}<br>T = (X_1 - \bar{X})^2 + \cdots + (X_n - \bar{X})^2.<br>\end{equation}<br>计算出$\mathbb{E}[T]$.</li>
-</ol>
-<p>\indent</p>
-<ol>
-<li>设$T &gt; 0$, $W_t$为定义在$[0, T]$上的布朗运动.<br>布朗桥(Brownian bridge)是一类高斯过程, 通常被用于描述当$W_t$在一段时间区间的首尾被``限定为固定值’’以后的随机过程.<br>设<br>\begin{equation}<br>B_t = W_t - \frac{t}{T} W_T, \quad t \in [0, T].<br>\end{equation}<br>显然$B_0 = B_T = 0$, 且$\mathbb{E}[B_t] = 0$.<br>对$s, t \in [0, T]$, (利用布朗运动$W_t$的性质)计算出<br>\begin{equation}<br>K(s, t) = \mathrm{Cov}(B_s, B_t).<br>\end{equation}<br>注: 不论是将一个随机过程在未来时刻$T$处的取值限制为$0$, 还是通过未来时刻的$W_T$来定义出$B_t$, 都是反直觉的, 但上述定义方式足够反映出布朗桥的规律. 布朗桥有其他的与之等价的定义方式.</li>
-</ol>
-<p>\indent</p>
-<ol>
-<li>在Metropolis—Hasting算法中(参见课件), 设对任意的状态$i$和$j$都成立$q_{ij} &gt; 0$.<br>\begin{enumerate}<br>\item [(1)] 计算出$X_n$的转移概率<br>\begin{equation}<br>p_{ij} = \mathbb{P}(X_{n+1} = j | X_n = i).<br>\end{equation}<br>\item [(2)] 证明分布$\pi$关于转移概率$p_{ij}$满足细致平衡条件.<br>\end{enumerate}</li>
-</ol>
-<p>\end{document}</p>
+    
 
     
 
@@ -661,9 +629,6 @@
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
         
-          
-  	  		<div class="aboutme-wrap" id="aboutme">主要涉及技术：<br>Java后端开发、聚合支付、<br>公众号开发、开源爱好者、Linux<br><br>联系QQ:2434387555<br><br>很惭愧<br><br>只做了一点微小的工作<br>谢谢大家</div>
-  	  	
     	</section>
     
   </div>
