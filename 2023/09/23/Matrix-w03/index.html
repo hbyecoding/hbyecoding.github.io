@@ -10,17 +10,13 @@
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="Properties on the Matrix InverseInner Product&lt;u,v&gt; &lt;u,v&gt;&lt;&lt;&#x2F;span&gt;u,&lt;&#x2F;span&gt;v&lt;&#x2F;span&gt;&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;A,B&gt;&#x3D;&lt;vec(A),vec(B)&gt;&#x3D;tr(AHB)&amp;">
+  <meta name="description" content="## Properties on the Matrix Inverse Inner Product &lt;u,v&gt; &lt;u,v&gt;&lt;u,v&gt; &lt;A,B&gt;&#x3D;&lt;vec(A),vec(B)&gt;&#x3D;tr(AHB)&lt;A,B&gt; &#x3D; &lt;(A), (B)&gt; &#x3D; tr(A^HB)&lt;A,B&gt;&#x3D;&lt;vec(A),vec">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Matrix-w03">
 <meta property="og:url" content="https://hbyecoding.github.io/2023/09/23/Matrix-w03/index.html">
 <meta property="og:site_name" content="Hongbo Website">
-<meta property="og:description" content="Properties on the Matrix InverseInner Product&lt;u,v&gt; &lt;u,v&gt;&lt;&lt;&#x2F;span&gt;u,&lt;&#x2F;span&gt;v&lt;&#x2F;span&gt;&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;A,B&gt;&#x3D;&lt;vec(A),vec(B)&gt;&#x3D;tr(AHB)&amp;">
+<meta property="og:description" content="## Properties on the Matrix Inverse Inner Product &lt;u,v&gt; &lt;u,v&gt;&lt;u,v&gt; &lt;A,B&gt;&#x3D;&lt;vec(A),vec(B)&gt;&#x3D;tr(AHB)&lt;A,B&gt; &#x3D; &lt;(A), (B)&gt; &#x3D; tr(A^HB)&lt;A,B&gt;&#x3D;&lt;vec(A),vec">
 <meta property="og:locale">
-<meta property="og:image" content="https://picx.zhimg.com/80/v2-73d221cb9175ae0c6895b8e13b39f598_1440w.png">
-<meta property="og:image" content="https://pic1.zhimg.com/80/v2-1b121b4cb8c2b6aefab8fbb0c512a4c7_1440w.png">
-<meta property="og:image" content="https://pic1.zhimg.com/80/v2-fc409ca69910b1fa30679d57849c8b18_1440w.png">
-<meta property="og:image" content="https://hbyecoding.github.io/2023/09/23/Matrix-w03/image-5.png">
 <meta property="og:image" content="https://hbyecoding.github.io/2023/09/23/Matrix-w03/image-7.png">
 <meta property="og:image" content="https://hbyecoding.github.io/2023/09/23/Matrix-w03/image-8.png">
 <meta property="og:image" content="https://hbyecoding.github.io/2023/09/23/Matrix-w03/image-9.png">
@@ -31,7 +27,7 @@
 <meta property="article:author" content="hongbo">
 <meta property="article:tag" content="矩阵, 笔记">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://picx.zhimg.com/80/v2-73d221cb9175ae0c6895b8e13b39f598_1440w.png">
+<meta name="twitter:image" content="https://hbyecoding.github.io/2023/09/23/Matrix-w03/image-7.png">
   
     <link rel="alternative" href="/atom.xml" title="Hongbo Website" type="application/atom+xml">
   
@@ -250,7 +246,7 @@
       <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
       <i class="icon-statistics"></i>
       <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">353字</span>
+      <span class="post-count">209字</span>
     </span>
   </span>
 
@@ -259,7 +255,7 @@
     <span class="post-meta-item-icon">
       <i class="icon-book icon"></i>
       <span class="post-meta-item-text"> 阅读时长≈</span>
-      <span class="post-count">2分</span>
+      <span class="post-count">1分</span>
     </span>
   </span>
 </div>
@@ -272,23 +268,182 @@
     
     <!-- ## ![Alt text](image-1.png)
  -->
-<h2 id="Properties-on-the-Matrix-Inverse"><a href="#Properties-on-the-Matrix-Inverse" class="headerlink" title="Properties on the Matrix Inverse"></a>Properties on the Matrix Inverse</h2><h2 id="Inner-Product"><a href="#Inner-Product" class="headerlink" title="Inner Product"></a>Inner Product</h2><p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&lt;</mo><mi>u</mi><mo separator="true">,</mo><mi>v</mi><mo>&gt;</mo></mrow><annotation encoding="application/x-tex"> &lt;u,v&gt;</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2777777777777778em;">&lt;/span&gt;</span><span class="base"><span class="strut" style="height:0.7335400000000001em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">u</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;">&lt;/span&gt;<span class="mord mathdefault" style="margin-right:0.03588em;">v</span><span class="mspace" style="margin-right:0.2777777777777778em;">&lt;/span&gt;<span class="mrel">&gt;</span>&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;<br><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&lt;</mo><mi>A</mi><mo separator="true">,</mo><mi>B</mi><mo>&gt;</mo><mo>=</mo><mo>&lt;</mo><mtext>vec</mtext><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo><mo separator="true">,</mo><mtext>vec</mtext><mo stretchy="false">(</mo><mi>B</mi><mo stretchy="false">)</mo><mo>&gt;</mo><mo>=</mo><mi>t</mi><mi>r</mi><mo stretchy="false">(</mo><msup><mi>A</mi><mi>H</mi></msup><mi>B</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">&lt;A,B&gt; = &lt;\text{vec}(A), \text{vec}(B)&gt; = tr(A^HB)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2777777777777778em;">&lt;/span&gt;</span><span class="base"><span class="strut" style="height:0.8777699999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">A</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;">&lt;/span&gt;<span class="mord mathdefault" style="margin-right:0.05017em;">B</span><span class="mspace" style="margin-right:0.2777777777777778em;">&lt;/span&gt;<span class="mrel">&gt;</span>&lt;/span&gt;<span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mrel">=</span>&lt;/span&gt;<span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2777777777777778em;">&lt;/span&gt;</span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord text"><span class="mord">vec</span>&lt;/span&gt;<span class="mopen">(</span><span class="mord mathdefault">A</span><span class="mclose">)</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;">&lt;/span&gt;<span class="mord text"><span class="mord">vec</span>&lt;/span&gt;<span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.05017em;">B</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;">&lt;/span&gt;<span class="mrel">&gt;</span>&lt;/span&gt;<span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;">&lt;/span&gt;</span><span class="base"><span class="strut" style="height:1.1413309999999999em;vertical-align:-0.25em;"></span><span class="mord mathdefault">t</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mopen">(</span><span class="mord"><span class="mord mathdefault">A</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8913309999999999em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.08125em;">H</span>&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;<span class="mord mathdefault" style="margin-right:0.05017em;">B</span><span class="mclose">)</span>&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;</p>
+<p>## Properties on the Matrix Inverse</p>
+<h2 id="inner-product">Inner Product</h2>
+<p><span class="katex"><span
+class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&lt;</mo><mi>u</mi><mo separator="true">,</mo><mi>v</mi><mo>&gt;</mo></mrow><annotation encoding="application/x-tex">
+&lt;u,v&gt;</annotation></semantics></math></span><span
+class="katex-html" aria-hidden="true"><span class="base"><span
+class="strut"
+style="height:0.5782em;vertical-align:-0.0391em;"></span><span
+class="mrel">&lt;</span><span class="mspace"
+style="margin-right:0.2777777777777778em;"></span></span><span
+class="base"><span class="strut"
+style="height:0.7335400000000001em;vertical-align:-0.19444em;"></span><span
+class="mord mathdefault">u</span><span class="mpunct">,</span><span
+class="mspace" style="margin-right:0.16666666666666666em;"></span><span
+class="mord mathdefault" style="margin-right:0.03588em;">v</span><span
+class="mspace" style="margin-right:0.2777777777777778em;"></span><span
+class="mrel">&gt;</span></span></span></span> <span
+class="katex-display"><span class="katex"><span
+class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&lt;</mo><mi>A</mi><mo separator="true">,</mo><mi>B</mi><mo>&gt;</mo><mo>=</mo><mo>&lt;</mo><mtext>vec</mtext><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo><mo separator="true">,</mo><mtext>vec</mtext><mo stretchy="false">(</mo><mi>B</mi><mo stretchy="false">)</mo><mo>&gt;</mo><mo>=</mo><mi>t</mi><mi>r</mi><mo stretchy="false">(</mo><msup><mi>A</mi><mi>H</mi></msup><mi>B</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">&lt;A,B&gt;
+= &lt;(A), (B)&gt; =
+tr(A^HB)</annotation></semantics></math></span><span class="katex-html"
+aria-hidden="true"><span class="base"><span class="strut"
+style="height:0.5782em;vertical-align:-0.0391em;"></span><span
+class="mrel">&lt;</span><span class="mspace"
+style="margin-right:0.2777777777777778em;"></span></span><span
+class="base"><span class="strut"
+style="height:0.8777699999999999em;vertical-align:-0.19444em;"></span><span
+class="mord mathdefault">A</span><span class="mpunct">,</span><span
+class="mspace" style="margin-right:0.16666666666666666em;"></span><span
+class="mord mathdefault" style="margin-right:0.05017em;">B</span><span
+class="mspace" style="margin-right:0.2777777777777778em;"></span><span
+class="mrel">&gt;</span></span><span class="base"><span class="strut"
+style="height:0.36687em;vertical-align:0em;"></span><span
+class="mrel">=</span></span><span class="base"><span class="strut"
+style="height:0.5782em;vertical-align:-0.0391em;"></span><span
+class="mrel">&lt;</span><span class="mspace"
+style="margin-right:0.2777777777777778em;"></span></span><span
+class="base"><span class="strut"
+style="height:1em;vertical-align:-0.25em;"></span><span
+class="mord text"><span class="mord">vec</span></span><span
+class="mopen">(</span><span class="mord mathdefault">A</span><span
+class="mclose">)</span><span class="mpunct">,</span><span class="mspace"
+style="margin-right:0.16666666666666666em;"></span><span
+class="mord text"><span class="mord">vec</span></span><span
+class="mopen">(</span><span class="mord mathdefault"
+style="margin-right:0.05017em;">B</span><span
+class="mclose">)</span><span class="mspace"
+style="margin-right:0.2777777777777778em;"></span><span
+class="mrel">&gt;</span></span><span class="base"><span class="strut"
+style="height:0.36687em;vertical-align:0em;"></span><span
+class="mrel">=</span><span class="mspace"
+style="margin-right:0.2777777777777778em;"></span></span><span
+class="base"><span class="strut"
+style="height:1.1413309999999999em;vertical-align:-0.25em;"></span><span
+class="mord mathdefault">t</span><span class="mord mathdefault"
+style="margin-right:0.02778em;">r</span><span
+class="mopen">(</span><span class="mord"><span
+class="mord mathdefault">A</span><span class="msupsub"><span
+class="vlist-t"><span class="vlist-r"><span class="vlist"
+style="height:0.8913309999999999em;"><span
+style="top:-3.113em;margin-right:0.05em;"><span class="pstrut"
+style="height:2.7em;"></span><span
+class="sizing reset-size6 size3 mtight"><span
+class="mord mathdefault mtight"
+style="margin-right:0.08125em;">H</span></span></span></span></span></span></span></span><span
+class="mord mathdefault" style="margin-right:0.05017em;">B</span><span
+class="mclose">)</span></span></span></span></span></p>
 <p>矩阵的共轭转置</p>
 <p>Frobenius 范数</p>
-<p><img src="https://picx.zhimg.com/80/v2-73d221cb9175ae0c6895b8e13b39f598_1440w.png" alt="Alt text"></p>
-<p><img src="https://pic1.zhimg.com/80/v2-1b121b4cb8c2b6aefab8fbb0c512a4c7_1440w.png" alt="Alt text"></p>
-<p><img src="https://pic1.zhimg.com/80/v2-fc409ca69910b1fa30679d57849c8b18_1440w.png" alt="Alt text"></p>
-<h2 id="Rank-of-a-Matrix"><a href="#Rank-of-a-Matrix" class="headerlink" title="Rank of a  Matrix"></a>Rank of a  Matrix</h2><ol>
+<figure>
+<img
+src="https://picx.zhimg.com/80/v2-73d221cb9175ae0c6895b8e13b39f598_1440w.png"
+alt="Alt text" />
+<figcaption aria-hidden="true">Alt text</figcaption>
+</figure>
+<figure>
+<img
+src="https://pic1.zhimg.com/80/v2-1b121b4cb8c2b6aefab8fbb0c512a4c7_1440w.png"
+alt="Alt text" />
+<figcaption aria-hidden="true">Alt text</figcaption>
+</figure>
+<figure>
+<img
+src="https://pic1.zhimg.com/80/v2-fc409ca69910b1fa30679d57849c8b18_1440w.png"
+alt="Alt text" />
+<figcaption aria-hidden="true">Alt text</figcaption>
+</figure>
+<h2 id="rank-of-a-matrix">Rank of a Matrix</h2>
+<ol type="1">
 <li>max number of linearly independent rows/cols</li>
-<li>rank(A)  = dim row(A) = dim col(A)</li>
+<li>rank(A) = dim row(A) = dim col(A)</li>
 </ol>
-<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mi>o</mi><mi>w</mi><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">{</mo><msup><mi>y</mi><mi>T</mi></msup><mi>A</mi><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">row(A) = { y^TA}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault">o</span><span class="mord mathdefault" style="margin-right:0.02691em;">w</span><span class="mopen">(</span><span class="mord mathdefault">A</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;">&lt;/span&gt;<span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;">&lt;/span&gt;</span><span class="base"><span class="strut" style="height:1.1413309999999999em;vertical-align:-0.25em;"></span><span class="mopen">{</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8913309999999999em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.13889em;">T</span>&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;<span class="mord mathdefault">A</span><span class="mclose">}</span>&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;<br><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mi>o</mi><mi>l</mi><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">{</mo><mi>A</mi><mi>x</mi><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">col(A) = { Ax}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">c</span><span class="mord mathdefault">o</span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mopen">(</span><span class="mord mathdefault">A</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;">&lt;/span&gt;<span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;">&lt;/span&gt;</span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">{</span><span class="mord mathdefault">A</span><span class="mord mathdefault">x</span><span class="mclose">}</span>&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;<br><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mi>a</mi><mi>n</mi><mi>k</mi><mrow><mi>A</mi><mi>X</mi></mrow><mo stretchy="false">?</mo><mo stretchy="false">?</mo><mi>r</mi><mi>a</mi><mi>n</mi><mi>k</mi><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo>&lt;/mrow&gt;<annotation encoding="application/x-tex">rank{ AX} ??  rank(A)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault">a</span><span class="mord mathdefault">n</span><span class="mord mathdefault" style="margin-right:0.03148em;">k</span><span class="mord"><span class="mord mathdefault">A</span><span class="mord mathdefault" style="margin-right:0.07847em;">X</span>&lt;/span&gt;<span class="mclose">?</span><span class="mclose">?</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault">a</span><span class="mord mathdefault">n</span><span class="mord mathdefault" style="margin-right:0.03148em;">k</span><span class="mopen">(</span><span class="mord mathdefault">A</span><span class="mclose">)</span>&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;<br>什么满秩的时候/<br>左乘一个列满秩 或者 右乘一个 行满秩的矩阵 不改变 A的rank<br><img src="image-5.png" alt="Alt text"></p>
-<p><img src="image-7.png" alt="Alt text"><br>这里面其实有A = XY (总可以)</p>
-<p>未来我们使用这个性质 就是总可以 AB = XY  (if AB!=  0)</p>
-<p><img src="image-8.png" alt="Alt text"></p>
-<p><img src="image-9.png" alt="ker 和 rank 之间的关系需要证明"></p>
-<h2 id="determination-of-MATRIX"><a href="#determination-of-MATRIX" class="headerlink" title="determination of MATRIX"></a>determination of MATRIX</h2><h3 id="properties-of-det-A"><a href="#properties-of-det-A" class="headerlink" title="properties of det(A)"></a>properties of det(A)</h3><p>8 properties AND 2 other properties<br><img src="image-4.png" alt="Alt text"></p>
-<p><img src="image-10.png" alt="Alt text"></p>
+<p><span class="katex-display"><span class="katex"><span
+class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mi>o</mi><mi>w</mi><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">{</mo><msup><mi>y</mi><mi>T</mi></msup><mi>A</mi><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">row(A)
+= { y^TA}</annotation></semantics></math></span><span class="katex-html"
+aria-hidden="true"><span class="base"><span class="strut"
+style="height:1em;vertical-align:-0.25em;"></span><span
+class="mord mathdefault" style="margin-right:0.02778em;">r</span><span
+class="mord mathdefault">o</span><span class="mord mathdefault"
+style="margin-right:0.02691em;">w</span><span
+class="mopen">(</span><span class="mord mathdefault">A</span><span
+class="mclose">)</span><span class="mspace"
+style="margin-right:0.2777777777777778em;"></span><span
+class="mrel">=</span><span class="mspace"
+style="margin-right:0.2777777777777778em;"></span></span><span
+class="base"><span class="strut"
+style="height:1.1413309999999999em;vertical-align:-0.25em;"></span><span
+class="mopen">{</span><span class="mord"><span class="mord mathdefault"
+style="margin-right:0.03588em;">y</span><span class="msupsub"><span
+class="vlist-t"><span class="vlist-r"><span class="vlist"
+style="height:0.8913309999999999em;"><span
+style="top:-3.113em;margin-right:0.05em;"><span class="pstrut"
+style="height:2.7em;"></span><span
+class="sizing reset-size6 size3 mtight"><span
+class="mord mathdefault mtight"
+style="margin-right:0.13889em;">T</span></span></span></span></span></span></span></span><span
+class="mord mathdefault">A</span><span
+class="mclose">}</span></span></span></span></span> <span
+class="katex-display"><span class="katex"><span
+class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mi>o</mi><mi>l</mi><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">{</mo><mi>A</mi><mi>x</mi><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">col(A)
+= { Ax}</annotation></semantics></math></span><span class="katex-html"
+aria-hidden="true"><span class="base"><span class="strut"
+style="height:1em;vertical-align:-0.25em;"></span><span
+class="mord mathdefault">c</span><span
+class="mord mathdefault">o</span><span class="mord mathdefault"
+style="margin-right:0.01968em;">l</span><span
+class="mopen">(</span><span class="mord mathdefault">A</span><span
+class="mclose">)</span><span class="mspace"
+style="margin-right:0.2777777777777778em;"></span><span
+class="mrel">=</span><span class="mspace"
+style="margin-right:0.2777777777777778em;"></span></span><span
+class="base"><span class="strut"
+style="height:1em;vertical-align:-0.25em;"></span><span
+class="mopen">{</span><span class="mord mathdefault">A</span><span
+class="mord mathdefault">x</span><span
+class="mclose">}</span></span></span></span></span> <span
+class="katex-display"><span class="katex"><span
+class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mi>a</mi><mi>n</mi><mi>k</mi><mrow><mi>A</mi><mi>X</mi></mrow><mo stretchy="false">?</mo><mo stretchy="false">?</mo><mi>r</mi><mi>a</mi><mi>n</mi><mi>k</mi><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">rank{
+AX} ?? rank(A)</annotation></semantics></math></span><span
+class="katex-html" aria-hidden="true"><span class="base"><span
+class="strut" style="height:1em;vertical-align:-0.25em;"></span><span
+class="mord mathdefault" style="margin-right:0.02778em;">r</span><span
+class="mord mathdefault">a</span><span
+class="mord mathdefault">n</span><span class="mord mathdefault"
+style="margin-right:0.03148em;">k</span><span class="mord"><span
+class="mord mathdefault">A</span><span class="mord mathdefault"
+style="margin-right:0.07847em;">X</span></span><span
+class="mclose">?</span><span class="mclose">?</span><span
+class="mord mathdefault" style="margin-right:0.02778em;">r</span><span
+class="mord mathdefault">a</span><span
+class="mord mathdefault">n</span><span class="mord mathdefault"
+style="margin-right:0.03148em;">k</span><span
+class="mopen">(</span><span class="mord mathdefault">A</span><span
+class="mclose">)</span></span></span></span></span> 什么满秩的时候/
+左乘一个列满秩 或者 右乘一个 行满秩的矩阵 不改变 A的rank <img
+src="image-5.png" alt="Alt text" /></p>
+<p><img src="image-7.png" alt="Alt text" /> 这里面其实有A = XY
+(总可以)</p>
+<p>未来我们使用这个性质 就是总可以 AB = XY (if AB!= 0)</p>
+<figure>
+<img src="image-8.png" alt="Alt text" />
+<figcaption aria-hidden="true">Alt text</figcaption>
+</figure>
+<figure>
+<img src="image-9.png" alt="ker 和 rank 之间的关系需要证明" />
+<figcaption aria-hidden="true">ker 和 rank
+之间的关系需要证明</figcaption>
+</figure>
+<h2 id="determination-of-matrix">determination of MATRIX</h2>
+<h3 id="properties-of-deta">properties of det(A)</h3>
+<p>8 properties AND 2 other properties <img src="image-4.png"
+alt="Alt text" /></p>
+<figure>
+<img src="image-10.png" alt="Alt text" />
+<figcaption aria-hidden="true">Alt text</figcaption>
+</figure>
 
     
 
@@ -621,11 +776,11 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">test</a>
+                <a href="javascript:void(0)" class="js-tag color3">数学</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">数学</a>
+                <a href="javascript:void(0)" class="js-tag color5">test</a>
               </li>
             
             <div class="clearfix"></div>
