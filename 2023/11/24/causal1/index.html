@@ -10,12 +10,12 @@
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="人类对于多任务的轻易掌控，是基于人类长期的知识、经验和习惯形成的 研究因果关系最大的一个目标，就是找出事物之间真正的因果关系，去掉那些混杂的伪因果关系。 这里我们先简简单介绍一下脸上的巧克力与诺贝尔奖的例子有研究表明，巧克力消费量越高的国家出现诺贝尔奖得主的概率就会越高但我们拥有常识的话，可以考虑到，很可能巧克力消费量并不是导致诺贝尔奖得主数量的一个原因，或者说原因。 因为一些共鸣，让巧克力">
+  <meta name="description" content="人类对于多任务的轻易掌控，是基于人类长期的知识、经验和习惯形成的研究因果关系最大的一个目标，就是找出事物之间真正的因果关系，去掉那些混杂的伪因果关系。这里我们先简简单介绍一下脸上的巧克力与诺贝尔奖的例子有研究表明，巧克力消费量越高的国家出现诺贝尔奖得主的概率就会越高但我们拥有常识的话，可以考虑到，很可能巧克力消费量并不是导致诺贝尔奖得主数量的一个原因，或者说原因。因为一些共鸣，让巧克力销量和诺贝尔">
 <meta property="og:type" content="article">
 <meta property="og:title" content="1因果推理初探 没有因果万万不能-DAGs">
 <meta property="og:url" content="https://hbyecoding.github.io/2023/11/24/causal1/index.html">
 <meta property="og:site_name" content="Hongbo Website">
-<meta property="og:description" content="人类对于多任务的轻易掌控，是基于人类长期的知识、经验和习惯形成的 研究因果关系最大的一个目标，就是找出事物之间真正的因果关系，去掉那些混杂的伪因果关系。 这里我们先简简单介绍一下脸上的巧克力与诺贝尔奖的例子有研究表明，巧克力消费量越高的国家出现诺贝尔奖得主的概率就会越高但我们拥有常识的话，可以考虑到，很可能巧克力消费量并不是导致诺贝尔奖得主数量的一个原因，或者说原因。 因为一些共鸣，让巧克力">
+<meta property="og:description" content="人类对于多任务的轻易掌控，是基于人类长期的知识、经验和习惯形成的研究因果关系最大的一个目标，就是找出事物之间真正的因果关系，去掉那些混杂的伪因果关系。这里我们先简简单介绍一下脸上的巧克力与诺贝尔奖的例子有研究表明，巧克力消费量越高的国家出现诺贝尔奖得主的概率就会越高但我们拥有常识的话，可以考虑到，很可能巧克力消费量并不是导致诺贝尔奖得主数量的一个原因，或者说原因。因为一些共鸣，让巧克力销量和诺贝尔">
 <meta property="og:locale">
 <meta property="article:published_time" content="2023-11-23T16:09:26.000Z">
 <meta property="article:modified_time" content="2023-11-24T09:23:08.038Z">
@@ -270,7 +270,7 @@
       <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
       <i class="icon-statistics"></i>
       <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">381字</span>
+      <span class="post-count">397字</span>
     </span>
   </span>
 
@@ -290,27 +290,8 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    <h1
-id="人类对于多任务的轻易掌控是基于人类长期的知识经验和习惯形成的">人类对于多任务的轻易掌控，是基于人类长期的知识、经验和习惯形成的</h1>
-<h3
-id="研究因果关系最大的一个目标就是找出事物之间真正的因果关系去掉那些混杂的伪因果关系">研究因果关系最大的一个目标，就是找出事物之间真正的因果关系，去掉那些混杂的伪因果关系。</h3>
-<p>这里我们先简简单介绍一下脸上的巧克力与诺贝尔奖的例子有研究表明，巧克力消费量越高的国家出现诺贝尔奖得主的概率就会越高但我们拥有常识的话，可以考虑到，很可能巧克力消费量并不是导致诺贝尔奖得主数量的一个原因，或者说原因。
-因为一些共鸣，让巧克力销量和诺贝尔奖产生了关联。这些共因我们猜测有可能是经济增长水平程度等等。
-假的例子或者说混淆抽烟的人容易，患肺癌头晕的人也容易出现黄手指因为抽烟这个共同原因，黄手指和肺癌产生了关联。我们不难发现手指黄的人，很多都容易被检测出肺癌，但我们不能说黄手指会导致肺癌，他俩并没有因果关系。这个共同原因也被称之为混杂因子（Confounder）。因此让黄手指这个explosure和肺癌outcome出现了一种伪相关，这种伪相关被称为
-bias。</p>
-<p>因果关系<span class="katex"><span
-class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>→</mo><mi>Y</mi></mrow><annotation encoding="application/x-tex">A
-Y</annotation></semantics></math></span><span class="katex-html"
-aria-hidden="true"><span class="base"><span class="strut"
-style="height:0.68333em;vertical-align:0em;"></span><span
-class="mord mathdefault">A</span><span class="mspace"
-style="margin-right:0.2777777777777778em;"></span><span
-class="mrel">→</span><span class="mspace"
-style="margin-right:0.2777777777777778em;"></span></span><span
-class="base"><span class="strut"
-style="height:0.68333em;vertical-align:0em;"></span><span
-class="mord mathdefault"
-style="margin-right:0.22222em;">Y</span></span></span></span>和差连接诱导的伪相关混合在一起</p>
+    <h1 id="人类对于多任务的轻易掌控，是基于人类长期的知识、经验和习惯形成的"><a href="#人类对于多任务的轻易掌控，是基于人类长期的知识、经验和习惯形成的" class="headerlink" title="人类对于多任务的轻易掌控，是基于人类长期的知识、经验和习惯形成的"></a>人类对于多任务的轻易掌控，是基于人类长期的知识、经验和习惯形成的</h1><h3 id="研究因果关系最大的一个目标，就是找出事物之间真正的因果关系，去掉那些混杂的伪因果关系。"><a href="#研究因果关系最大的一个目标，就是找出事物之间真正的因果关系，去掉那些混杂的伪因果关系。" class="headerlink" title="研究因果关系最大的一个目标，就是找出事物之间真正的因果关系，去掉那些混杂的伪因果关系。"></a>研究因果关系最大的一个目标，就是找出事物之间真正的因果关系，去掉那些混杂的伪因果关系。</h3><p>这里我们先简简单介绍一下脸上的巧克力与诺贝尔奖的例子有研究表明，巧克力消费量越高的国家出现诺贝尔奖得主的概率就会越高但我们拥有常识的话，可以考虑到，很可能巧克力消费量并不是导致诺贝尔奖得主数量的一个原因，或者说原因。<br>因为一些共鸣，让巧克力销量和诺贝尔奖产生了关联。这些共因我们猜测有可能是经济增长水平程度等等。<br>假的例子或者说混淆抽烟的人容易，患肺癌头晕的人也容易出现黄手指因为抽烟这个共同原因，黄手指和肺癌产生了关联。我们不难发现手指黄的人，很多都容易被检测出肺癌，但我们不能说黄手指会导致肺癌，他俩并没有因果关系。这个共同原因也被称之为混杂因子（Confounder）。因此让黄手指这个explosure和肺癌outcome出现了一种伪相关，这种伪相关被称为 bias。</p>
+<p>因果关系<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>→</mo><mi>Y</mi></mrow><annotation encoding="application/x-tex">A \rightarrow Y</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">A</span><span class="mspace" style="margin-right:0.2777777777777778em;">&lt;/span&gt;<span class="mrel">→</span><span class="mspace" style="margin-right:0.2777777777777778em;">&lt;/span&gt;</span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.22222em;">Y</span>&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;和差连接诱导的伪相关混合在一起</p>
 
     
 
@@ -629,6 +610,10 @@ style="margin-right:0.22222em;">Y</span></span></span></span>和差连接诱导�
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">English</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">矩阵</a>
               </li>
              
@@ -645,10 +630,6 @@ style="margin-right:0.22222em;">Y</span></span></span></span>和差连接诱导�
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">English</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">因果</a>
               </li>
              
@@ -657,11 +638,11 @@ style="margin-right:0.22222em;">Y</span></span></span></span>和差连接诱导�
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Futurenews</a>
+                <a href="javascript:void(0)" class="js-tag color3">数学</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">数学</a>
+                <a href="javascript:void(0)" class="js-tag color1">Futurenews</a>
               </li>
              
               <li class="article-tag-list-item">
