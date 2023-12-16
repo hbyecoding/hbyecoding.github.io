@@ -10,12 +10,12 @@
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="设T为线性空间上的线性变换t，在某组基下矩阵为对角矩阵的充分必要条件，是基中的向量满足T(ηi)&#x3D;λiηi, i&#x3D;1,2,...,n.T(\eta_i) &#x3D; \lambda_i \eta_i, \, i &#x3D; 1, 2,…,n.T(ηi&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;​&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;">
+  <meta name="description" content="设T为线性空间上的线性变换t，在某组基下矩阵为对角矩阵的充分必要条件，是基中的向量满足 T(ηi)&#x3D;λiηi, i&#x3D;1,2,...,n.T(_i) &#x3D; _i _i, , i &#x3D; 1, 2,...,n.T(ηi​)&#x3D;λi​ηi​,i&#x3D;1,2,...,n. 几何重数小于等于代数重数 当我们说一个方阵可以相似对角化的时候，等价于问: (1) T有n个线性无关的特征向量* (2) Vλ1⨁Vλ">
 <meta property="og:type" content="article">
 <meta property="og:title" content="subspace_2023_11_27">
 <meta property="og:url" content="https://hbyecoding.github.io/2023/11/27/subspace-2023-11-27/index.html">
 <meta property="og:site_name" content="Hongbo Website">
-<meta property="og:description" content="设T为线性空间上的线性变换t，在某组基下矩阵为对角矩阵的充分必要条件，是基中的向量满足T(ηi)&#x3D;λiηi, i&#x3D;1,2,...,n.T(\eta_i) &#x3D; \lambda_i \eta_i, \, i &#x3D; 1, 2,…,n.T(ηi&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;​&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;">
+<meta property="og:description" content="设T为线性空间上的线性变换t，在某组基下矩阵为对角矩阵的充分必要条件，是基中的向量满足 T(ηi)&#x3D;λiηi, i&#x3D;1,2,...,n.T(_i) &#x3D; _i _i, , i &#x3D; 1, 2,...,n.T(ηi​)&#x3D;λi​ηi​,i&#x3D;1,2,...,n. 几何重数小于等于代数重数 当我们说一个方阵可以相似对角化的时候，等价于问: (1) T有n个线性无关的特征向量* (2) Vλ1⨁Vλ">
 <meta property="og:locale">
 <meta property="article:published_time" content="2023-11-27T01:48:57.000Z">
 <meta property="article:modified_time" content="2023-11-29T12:18:01.129Z">
@@ -270,7 +270,7 @@
       <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
       <i class="icon-statistics"></i>
       <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">1.8k字</span>
+      <span class="post-count">402字</span>
     </span>
   </span>
 
@@ -279,7 +279,7 @@
     <span class="post-meta-item-icon">
       <i class="icon-book icon"></i>
       <span class="post-meta-item-text"> 阅读时长≈</span>
-      <span class="post-count">10分</span>
+      <span class="post-count">1分</span>
     </span>
   </span>
 </div>
@@ -290,15 +290,614 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    <p>设T为线性空间上的线性变换t，在某组基下矩阵为对角矩阵的充分必要条件，是基中的向量满足<br><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo stretchy="false">(</mo><msub><mi>η</mi><mi>i</mi></msub><mo stretchy="false">)</mo><mo>=</mo><msub><mi>λ</mi><mi>i</mi></msub><msub><mi>η</mi><mi>i</mi></msub><mo separator="true">,</mo><mtext> </mtext><mi>i</mi><mo>=</mo><mn>1</mn><mo separator="true">,</mo><mn>2</mn><mo separator="true">,</mo><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mo separator="true">,</mo><mi>n</mi><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">T(\eta_i) = \lambda_i \eta_i, \, i = 1, 2,…,n.</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">T</span><span class="mopen">(</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">η</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span>&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;<span class="vlist-s">​</span>&lt;/span&gt;<span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span>&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;<span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;">&lt;/span&gt;<span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;">&lt;/span&gt;</span><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord"><span class="mord mathdefault">λ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span>&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;<span class="vlist-s">​</span>&lt;/span&gt;<span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span>&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;<span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">η</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span>&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;<span class="vlist-s">​</span>&lt;/span&gt;<span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span>&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;<span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;">&lt;/span&gt;<span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">i</span><span class="mspace" style="margin-right:0.2777777777777778em;">&lt;/span&gt;<span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;">&lt;/span&gt;</span><span class="base"><span class="strut" style="height:0.8388800000000001em;vertical-align:-0.19444em;"></span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;">&lt;/span&gt;<span class="mord">2</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;">&lt;/span&gt;<span class="mord">.</span><span class="mord">.</span><span class="mord">.</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;">&lt;/span&gt;<span class="mord mathdefault">n</span><span class="mord">.</span>&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;</p>
+    <p>设T为线性空间上的线性变换t，在某组基下矩阵为对角矩阵的充分必要条件，是基中的向量满足
+<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo stretchy="false">(</mo><msub><mi>η</mi><mi>i</mi></msub><mo stretchy="false">)</mo><mo>=</mo><msub><mi>λ</mi><mi>i</mi></msub><msub><mi>η</mi><mi>i</mi></msub><mo separator="true">,</mo><mtext> </mtext><mi>i</mi><mo>=</mo><mn>1</mn><mo separator="true">,</mo><mn>2</mn><mo separator="true">,</mo><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mo separator="true">,</mo><mi>n</mi><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">T(_i)
+= _i _i, , i = 1, 2,...,n.</annotation></semantics></math></span><span
+class="katex-html" aria-hidden="true"><span class="base"><span
+class="strut" style="height:1em;vertical-align:-0.25em;"></span><span
+class="mord mathdefault" style="margin-right:0.13889em;">T</span><span
+class="mopen">(</span><span class="mord"><span class="mord mathdefault"
+style="margin-right:0.03588em;">η</span><span class="msupsub"><span
+class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist"
+style="height:0.31166399999999994em;"><span
+style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span
+class="pstrut" style="height:2.7em;"></span><span
+class="sizing reset-size6 size3 mtight"><span
+class="mord mathdefault mtight">i</span></span></span></span><span
+class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+style="height:0.15em;"><span></span></span></span></span></span></span><span
+class="mclose">)</span><span class="mspace"
+style="margin-right:0.2777777777777778em;"></span><span
+class="mrel">=</span><span class="mspace"
+style="margin-right:0.2777777777777778em;"></span></span><span
+class="base"><span class="strut"
+style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span
+class="mord"><span class="mord mathdefault">λ</span><span
+class="msupsub"><span class="vlist-t vlist-t2"><span
+class="vlist-r"><span class="vlist"
+style="height:0.31166399999999994em;"><span
+style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span
+class="pstrut" style="height:2.7em;"></span><span
+class="sizing reset-size6 size3 mtight"><span
+class="mord mathdefault mtight">i</span></span></span></span><span
+class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+style="height:0.15em;"><span></span></span></span></span></span></span><span
+class="mord"><span class="mord mathdefault"
+style="margin-right:0.03588em;">η</span><span class="msupsub"><span
+class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist"
+style="height:0.31166399999999994em;"><span
+style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span
+class="pstrut" style="height:2.7em;"></span><span
+class="sizing reset-size6 size3 mtight"><span
+class="mord mathdefault mtight">i</span></span></span></span><span
+class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+style="height:0.15em;"><span></span></span></span></span></span></span><span
+class="mpunct">,</span><span class="mspace"
+style="margin-right:0.16666666666666666em;"></span><span class="mspace"
+style="margin-right:0.16666666666666666em;"></span><span
+class="mord mathdefault">i</span><span class="mspace"
+style="margin-right:0.2777777777777778em;"></span><span
+class="mrel">=</span><span class="mspace"
+style="margin-right:0.2777777777777778em;"></span></span><span
+class="base"><span class="strut"
+style="height:0.8388800000000001em;vertical-align:-0.19444em;"></span><span
+class="mord">1</span><span class="mpunct">,</span><span class="mspace"
+style="margin-right:0.16666666666666666em;"></span><span
+class="mord">2</span><span class="mpunct">,</span><span class="mspace"
+style="margin-right:0.16666666666666666em;"></span><span
+class="mord">.</span><span class="mord">.</span><span
+class="mord">.</span><span class="mpunct">,</span><span class="mspace"
+style="margin-right:0.16666666666666666em;"></span><span
+class="mord mathdefault">n</span><span
+class="mord">.</span></span></span></span></span></p>
 <p>几何重数小于等于代数重数</p>
-<p>当我们说一个方阵可以相似对角化的时候，等价于问:<br>(1) T有n个线性无关的特征向量*<br>(2)<br><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>V</mi><msub><mi>λ</mi><mn>1</mn></msub>&lt;/msub&gt;<mo>⨁</mo><msub><mi>V</mi><msub><mi>λ</mi><mn>2</mn></msub>&lt;/msub&gt;<mo>⨁</mo><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mo>⨁</mo><msub><mi>V</mi><msub><mi>λ</mi><mi>s</mi></msub>&lt;/msub&gt;<mo>=</mo><msub><mi>V</mi><mi>n</mi></msub><mo stretchy="false">(</mo><mi>F</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">V<em>{\lambda_1} \bigoplus V</em>{\lambda<em>2} \bigoplus … \bigoplus V</em>{\lambda_s} = V_n(F)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.6000100000000002em;vertical-align:-0.55001em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.22222em;">V</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.33610799999999996em;"><span style="top:-2.5500000000000003em;margin-left:-0.22222em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathdefault mtight">λ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31731428571428577em;"><span style="top:-2.357em;margin-left:0em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight">1</span>&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;<span class="vlist-s">​</span>&lt;/span&gt;<span class="vlist-r"><span class="vlist" style="height:0.143em;"><span></span>&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;<span class="vlist-s">​</span>&lt;/span&gt;<span class="vlist-r"><span class="vlist" style="height:0.2501em;"><span></span>&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;<span class="mspace" style="margin-right:0.16666666666666666em;">&lt;/span&gt;<span class="mop op-symbol large-op" style="position:relative;top:-0.000004999999999977245em;">⨁</span><span class="mspace" style="margin-right:0.16666666666666666em;">&lt;/span&gt;<span class="mord"><span class="mord mathdefault" style="margin-right:0.22222em;">V</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.33610799999999996em;"><span style="top:-2.5500000000000003em;margin-left:-0.22222em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathdefault mtight">λ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31731428571428577em;"><span style="top:-2.357em;margin-left:0em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight">2</span>&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;<span class="vlist-s">​</span>&lt;/span&gt;<span class="vlist-r"><span class="vlist" style="height:0.143em;"><span></span>&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;<span class="vlist-s">​</span>&lt;/span&gt;<span class="vlist-r"><span class="vlist" style="height:0.2501em;"><span></span>&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;<span class="mspace" style="margin-right:0.16666666666666666em;">&lt;/span&gt;<span class="mop op-symbol large-op" style="position:relative;top:-0.000004999999999977245em;">⨁</span><span class="mspace" style="margin-right:0.16666666666666666em;">&lt;/span&gt;<span class="mord">.</span><span class="mord">.</span><span class="mord">.</span><span class="mspace" style="margin-right:0.16666666666666666em;">&lt;/span&gt;<span class="mop op-symbol large-op" style="position:relative;top:-0.000004999999999977245em;">⨁</span><span class="mspace" style="margin-right:0.16666666666666666em;">&lt;/span&gt;<span class="mord"><span class="mord mathdefault" style="margin-right:0.22222em;">V</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.33610799999999996em;"><span style="top:-2.5500000000000003em;margin-left:-0.22222em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathdefault mtight">λ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.16454285714285719em;"><span style="top:-2.357em;margin-left:0em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mathdefault mtight">s</span>&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;<span class="vlist-s">​</span>&lt;/span&gt;<span class="vlist-r"><span class="vlist" style="height:0.143em;"><span></span>&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;<span class="vlist-s">​</span>&lt;/span&gt;<span class="vlist-r"><span class="vlist" style="height:0.2501em;"><span></span>&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;<span class="mspace" style="margin-right:0.2777777777777778em;">&lt;/span&gt;<span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;">&lt;/span&gt;</span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.22222em;">V</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.22222em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">n</span>&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;<span class="vlist-s">​</span>&lt;/span&gt;<span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span>&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;<span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.13889em;">F</span><span class="mclose">)</span>&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;</p>
-<p>从定理2.3可以推出，上式成立的充分必要条件是，若<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>λ</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">\lambda_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.84444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">λ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span>&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;<span class="vlist-s">​</span>&lt;/span&gt;<span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span>&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; 是t的k_i重特征值,则必有  </p>
-<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mi>i</mi><mi>m</mi><msub><mi>V</mi><msub><mi>λ</mi><mi>i</mi></msub>&lt;/msub&gt;<mo>=</mo><msub><mi>k</mi><mi>i</mi></msub><mspace width="1em"/><mi>i</mi><mo>=</mo><mn>1</mn><mo separator="true">,</mo><mn>2</mn><mo separator="true">,</mo><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mo separator="true">,</mo><mi>s</mi></mrow><annotation encoding="application/x-tex">dim V_{\lambda_i} = k_i \quad i = 1,2,…,s</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9445399999999999em;vertical-align:-0.2501em;"></span><span class="mord mathdefault">d</span><span class="mord mathdefault">i</span><span class="mord mathdefault">m</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.22222em;">V</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.33610799999999996em;"><span style="top:-2.5500000000000003em;margin-left:-0.22222em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathdefault mtight">λ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3280857142857143em;"><span style="top:-2.357em;margin-left:0em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mathdefault mtight">i</span>&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;<span class="vlist-s">​</span>&lt;/span&gt;<span class="vlist-r"><span class="vlist" style="height:0.143em;"><span></span>&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;<span class="vlist-s">​</span>&lt;/span&gt;<span class="vlist-r"><span class="vlist" style="height:0.2501em;"><span></span>&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;<span class="mspace" style="margin-right:0.2777777777777778em;">&lt;/span&gt;<span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;">&lt;/span&gt;</span><span class="base"><span class="strut" style="height:0.84444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03148em;">k</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:-0.03148em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span>&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;<span class="vlist-s">​</span>&lt;/span&gt;<span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span>&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;<span class="mspace" style="margin-right:1em;">&lt;/span&gt;<span class="mord mathdefault">i</span><span class="mspace" style="margin-right:0.2777777777777778em;">&lt;/span&gt;<span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;">&lt;/span&gt;</span><span class="base"><span class="strut" style="height:0.8388800000000001em;vertical-align:-0.19444em;"></span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;">&lt;/span&gt;<span class="mord">2</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;">&lt;/span&gt;<span class="mord">.</span><span class="mord">.</span><span class="mord">.</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;">&lt;/span&gt;<span class="mord mathdefault">s</span>&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;</p>
-<p>补充，关于特征多项式和最小多项式<br>方阵A的特征多项式：</p>
-<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="normal">Δ</mi><mi>A</mi></msub><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mi mathvariant="normal">∣</mi><mi>λ</mi><mi>I</mi><mo>−</mo><mi>A</mi><mi mathvariant="normal">∣</mi><mo>=</mo><mrow><mo fence="true">∣</mo><mtable rowspacing="0.15999999999999992em" columnalign="center center center center" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mi>λ</mi><mo>−</mo><msub><mi>a</mi><mn>11</mn></msub></mrow>&lt;/mstyle&gt;&lt;/mtd&gt;<mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mn>0</mn><mo>−</mo><msub><mi>a</mi><mn>12</mn></msub></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mo lspace="0em" rspace="0em">⋯</mo></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mn>0</mn><mo>−</mo><msub><mi>a</mi><mrow><mn>1</mn><mi>n</mi></mrow>&lt;/msub&gt;&lt;/mrow&gt;</mstyle></mtd>&lt;/mtr&gt;<mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mn>0</mn><mo>−</mo><msub><mi>a</mi><mn>21</mn></msub></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mi>λ</mi><mo>−</mo><msub><mi>a</mi><mn>22</mn></msub></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mo lspace="0em" rspace="0em">⋯</mo></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mn>0</mn><mo>−</mo><msub><mi>a</mi><mrow><mn>2</mn><mi>n</mi></mrow>&lt;/msub&gt;&lt;/mrow&gt;</mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mi><mi mathvariant="normal">⋮</mi><mpadded height="+0em" voffset="0em"><mspace mathbackground="black" width="0em" height="1.5em"></mspace></mpadded>&lt;/mi&gt;</mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mi><mi mathvariant="normal">⋮</mi><mpadded height="+0em" voffset="0em"><mspace mathbackground="black" width="0em" height="1.5em"></mspace></mpadded>&lt;/mi&gt;</mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mo lspace="0em" rspace="0em">⋱</mo></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mi><mi mathvariant="normal">⋮</mi><mpadded height="+0em" voffset="0em"><mspace mathbackground="black" width="0em" height="1.5em"></mspace></mpadded>&lt;/mi&gt;</mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mn>0</mn><mo>−</mo><msub><mi>a</mi><mrow><mi>n</mi><mn>1</mn></mrow>&lt;/msub&gt;&lt;/mrow&gt;</mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mn>0</mn><mo>−</mo><msub><mi>a</mi><mrow><mi>n</mi><mn>2</mn></mrow>&lt;/msub&gt;&lt;/mrow&gt;</mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mo lspace="0em" rspace="0em">⋯</mo></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mi>λ</mi><mo>−</mo><msub><mi>a</mi><mrow><mi>n</mi><mi>n</mi></mrow>&lt;/msub&gt;&lt;/mrow&gt;</mstyle></mtd></mtr>&lt;/mtable&gt;<mo fence="true">∣</mo>&lt;/mrow&gt;&lt;/mrow&gt;<annotation encoding="application/x-tex">\Delta<em>A(x)=|\lambda I-A|=\left|\begin{array}{cccc}<br>\lambda-a</em>{11} &amp; 0-a<em>{12} &amp; \cdots &amp; 0-a</em>{1 n} \<br>0-a<em>{21} &amp; \lambda-a</em>{22} &amp; \cdots &amp; 0-a<em>{2 n} \<br>\vdots &amp; \vdots &amp; \ddots &amp; \vdots \<br>0-a</em>{n 1} &amp; 0-a<em>{n 2} &amp; \cdots &amp; \lambda-a</em>{n n}<br>\end{array}\right|</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord">Δ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">A</span>&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;<span class="vlist-s">​</span>&lt;/span&gt;<span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span>&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;<span class="mopen">(</span><span class="mord mathdefault">x</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;">&lt;/span&gt;<span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;">&lt;/span&gt;</span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">∣</span><span class="mord mathdefault">λ</span><span class="mord mathdefault" style="margin-right:0.07847em;">I</span><span class="mspace" style="margin-right:0.2222222222222222em;">&lt;/span&gt;<span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;">&lt;/span&gt;</span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">A</span><span class="mord">∣</span><span class="mspace" style="margin-right:0.2777777777777778em;">&lt;/span&gt;<span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;">&lt;/span&gt;</span><span class="base"><span class="strut" style="height:5.4899450000000005em;vertical-align:-2.4799999999999995em;"></span><span class="minner"><span class="mopen"><span class="delimsizing mult"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:3.0099450000000005em;"><span style="top:-0.1559550000000005em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span>&lt;/span&gt;&lt;/span&gt;<span style="top:-0.7569550000000005em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span>&lt;/span&gt;&lt;/span&gt;<span style="top:-1.3579550000000005em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span>&lt;/span&gt;&lt;/span&gt;<span style="top:-1.9589550000000004em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span>&lt;/span&gt;&lt;/span&gt;<span style="top:-2.5599550000000004em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span>&lt;/span&gt;&lt;/span&gt;<span style="top:-3.1609550000000004em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span>&lt;/span&gt;&lt;/span&gt;<span style="top:-3.7619550000000004em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span>&lt;/span&gt;&lt;/span&gt;<span style="top:-4.362955em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span>&lt;/span&gt;&lt;/span&gt;<span style="top:-4.408945em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span>&lt;/span&gt;&lt;/span&gt;<span style="top:-5.009945em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span>&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;<span class="vlist-s">​</span>&lt;/span&gt;<span class="vlist-r"><span class="vlist" style="height:2.4500449999999994em;"><span></span>&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;<span class="mord"><span class="mtable"><span class="arraycolsep" style="width:0.5em;"></span><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.9799999999999995em;"><span style="top:-5.8275em;"><span class="pstrut" style="height:3.6875em;"></span><span class="mord"><span class="mord mathdefault">λ</span><span class="mspace" style="margin-right:0.2222222222222222em;">&lt;/span&gt;<span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;">&lt;/span&gt;<span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span><span class="mord mtight">1</span>&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;<span class="vlist-s">​</span>&lt;/span&gt;<span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span>&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;<span style="top:-4.6275em;"><span class="pstrut" style="height:3.6875em;"></span><span class="mord"><span class="mord">0</span><span class="mspace" style="margin-right:0.2222222222222222em;">&lt;/span&gt;<span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;">&lt;/span&gt;<span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span><span class="mord mtight">1</span>&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;<span class="vlist-s">​</span>&lt;/span&gt;<span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span>&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;<span style="top:-2.7674999999999996em;"><span class="pstrut" style="height:3.6875em;"></span><span class="mord"><span class="mord"><span class="mord">⋮</span><span class="mord rule" style="border-right-width:0em;border-top-width:1.5em;bottom:0em;">&lt;/span&gt;</span>&lt;/span&gt;&lt;/span&gt;<span style="top:-1.5675000000000006em;"><span class="pstrut" style="height:3.6875em;"></span><span class="mord"><span class="mord">0</span><span class="mspace" style="margin-right:0.2222222222222222em;">&lt;/span&gt;<span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;">&lt;/span&gt;<span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">n</span><span class="mord mtight">1</span>&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;<span class="vlist-s">​</span>&lt;/span&gt;<span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span>&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;<span class="vlist-s">​</span>&lt;/span&gt;<span class="vlist-r"><span class="vlist" style="height:2.4799999999999995em;"><span></span>&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;<span class="arraycolsep" style="width:0.5em;">&lt;/span&gt;<span class="arraycolsep" style="width:0.5em;"></span><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.9799999999999995em;"><span style="top:-5.8275em;"><span class="pstrut" style="height:3.6875em;"></span><span class="mord"><span class="mord">0</span><span class="mspace" style="margin-right:0.2222222222222222em;">&lt;/span&gt;<span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;">&lt;/span&gt;<span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span><span class="mord mtight">2</span>&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;<span class="vlist-s">​</span>&lt;/span&gt;<span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span>&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;<span style="top:-4.6275em;"><span class="pstrut" style="height:3.6875em;"></span><span class="mord"><span class="mord mathdefault">λ</span><span class="mspace" style="margin-right:0.2222222222222222em;">&lt;/span&gt;<span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;">&lt;/span&gt;<span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span><span class="mord mtight">2</span>&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;<span class="vlist-s">​</span>&lt;/span&gt;<span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span>&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;<span style="top:-2.7674999999999996em;"><span class="pstrut" style="height:3.6875em;"></span><span class="mord"><span class="mord"><span class="mord">⋮</span><span class="mord rule" style="border-right-width:0em;border-top-width:1.5em;bottom:0em;">&lt;/span&gt;</span>&lt;/span&gt;&lt;/span&gt;<span style="top:-1.5675000000000006em;"><span class="pstrut" style="height:3.6875em;"></span><span class="mord"><span class="mord">0</span><span class="mspace" style="margin-right:0.2222222222222222em;">&lt;/span&gt;<span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;">&lt;/span&gt;<span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">n</span><span class="mord mtight">2</span>&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;<span class="vlist-s">​</span>&lt;/span&gt;<span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span>&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;<span class="vlist-s">​</span>&lt;/span&gt;<span class="vlist-r"><span class="vlist" style="height:2.4799999999999995em;"><span></span>&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;<span class="arraycolsep" style="width:0.5em;">&lt;/span&gt;<span class="arraycolsep" style="width:0.5em;"></span><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.9799999999999995em;"><span style="top:-5.64em;"><span class="pstrut" style="height:3.5em;"></span><span class="mord"><span class="minner">⋯</span>&lt;/span&gt;&lt;/span&gt;<span style="top:-4.44em;"><span class="pstrut" style="height:3.5em;"></span><span class="mord"><span class="minner">⋯</span>&lt;/span&gt;&lt;/span&gt;<span style="top:-2.5799999999999996em;"><span class="pstrut" style="height:3.5em;"></span><span class="mord"><span class="minner">⋱</span>&lt;/span&gt;&lt;/span&gt;<span style="top:-1.3800000000000006em;"><span class="pstrut" style="height:3.5em;"></span><span class="mord"><span class="minner">⋯</span>&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;<span class="vlist-s">​</span>&lt;/span&gt;<span class="vlist-r"><span class="vlist" style="height:2.4799999999999995em;"><span></span>&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;<span class="arraycolsep" style="width:0.5em;">&lt;/span&gt;<span class="arraycolsep" style="width:0.5em;"></span><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.9799999999999995em;"><span style="top:-5.8275em;"><span class="pstrut" style="height:3.6875em;"></span><span class="mord"><span class="mord">0</span><span class="mspace" style="margin-right:0.2222222222222222em;">&lt;/span&gt;<span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;">&lt;/span&gt;<span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span><span class="mord mathdefault mtight">n</span>&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;<span class="vlist-s">​</span>&lt;/span&gt;<span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span>&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;<span style="top:-4.6275em;"><span class="pstrut" style="height:3.6875em;"></span><span class="mord"><span class="mord">0</span><span class="mspace" style="margin-right:0.2222222222222222em;">&lt;/span&gt;<span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;">&lt;/span&gt;<span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span><span class="mord mathdefault mtight">n</span>&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;<span class="vlist-s">​</span>&lt;/span&gt;<span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span>&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;<span style="top:-2.7674999999999996em;"><span class="pstrut" style="height:3.6875em;"></span><span class="mord"><span class="mord"><span class="mord">⋮</span><span class="mord rule" style="border-right-width:0em;border-top-width:1.5em;bottom:0em;">&lt;/span&gt;</span>&lt;/span&gt;&lt;/span&gt;<span style="top:-1.5675000000000006em;"><span class="pstrut" style="height:3.6875em;"></span><span class="mord"><span class="mord mathdefault">λ</span><span class="mspace" style="margin-right:0.2222222222222222em;">&lt;/span&gt;<span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;">&lt;/span&gt;<span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">n</span><span class="mord mathdefault mtight">n</span>&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;<span class="vlist-s">​</span>&lt;/span&gt;<span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span>&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;<span class="vlist-s">​</span>&lt;/span&gt;<span class="vlist-r"><span class="vlist" style="height:2.4799999999999995em;"><span></span>&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;<span class="arraycolsep" style="width:0.5em;">&lt;/span&gt;</span>&lt;/span&gt;<span class="mclose"><span class="delimsizing mult"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:3.0099450000000005em;"><span style="top:-0.1559550000000005em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span>&lt;/span&gt;&lt;/span&gt;<span style="top:-0.7569550000000005em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span>&lt;/span&gt;&lt;/span&gt;<span style="top:-1.3579550000000005em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span>&lt;/span&gt;&lt;/span&gt;<span style="top:-1.9589550000000004em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span>&lt;/span&gt;&lt;/span&gt;<span style="top:-2.5599550000000004em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span>&lt;/span&gt;&lt;/span&gt;<span style="top:-3.1609550000000004em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span>&lt;/span&gt;&lt;/span&gt;<span style="top:-3.7619550000000004em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span>&lt;/span&gt;&lt;/span&gt;<span style="top:-4.362955em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span>&lt;/span&gt;&lt;/span&gt;<span style="top:-4.408945em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span>&lt;/span&gt;&lt;/span&gt;<span style="top:-5.009945em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span>&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;<span class="vlist-s">​</span>&lt;/span&gt;<span class="vlist-r"><span class="vlist" style="height:2.4500449999999994em;"><span></span>&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;</p>
-<p>这里 一般都是<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo>−</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">I -A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.76666em;vertical-align:-0.08333em;"></span><span class="mord mathdefault" style="margin-right:0.07847em;">I</span><span class="mspace" style="margin-right:0.2222222222222222em;">&lt;/span&gt;<span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;">&lt;/span&gt;</span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">A</span>&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; .因为下面我们可以看到，对于幂等矩阵A,其特征值就是0或1，用I去减，得到的特征值仍然是1或0，故<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo>−</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">I -A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.76666em;vertical-align:-0.08333em;"></span><span class="mord mathdefault" style="margin-right:0.07847em;">I</span><span class="mspace" style="margin-right:0.2222222222222222em;">&lt;/span&gt;<span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;">&lt;/span&gt;</span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">A</span>&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;也是幂等矩阵，而<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>−</mo><mi>I</mi></mrow><annotation encoding="application/x-tex">A-I </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.76666em;vertical-align:-0.08333em;"></span><span class="mord mathdefault">A</span><span class="mspace" style="margin-right:0.2222222222222222em;">&lt;/span&gt;<span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;">&lt;/span&gt;</span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.07847em;">I</span>&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;则不是幂等矩阵。</p>
-<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="normal">Δ</mi><mi>A</mi></msub><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mrow><mo fence="true">∣</mo><mi>x</mi><mi>E</mi><mo>−</mo><mi>A</mi><mo fence="true">∣</mo></mrow><mo>=</mo>&lt;/mrow&gt;<annotation encoding="application/x-tex">\Delta_A(x) = \left|x E-A\right| =</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord">Δ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">A</span>&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;<span class="vlist-s">​</span>&lt;/span&gt;<span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span>&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;<span class="mopen">(</span><span class="mord mathdefault">x</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;">&lt;/span&gt;<span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;">&lt;/span&gt;</span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;">∣</span><span class="mord mathdefault">x</span><span class="mord mathdefault" style="margin-right:0.05764em;">E</span><span class="mspace" style="margin-right:0.2222222222222222em;">&lt;/span&gt;<span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;">&lt;/span&gt;<span class="mord mathdefault">A</span><span class="mclose delimcenter" style="top:0em;">∣</span>&lt;/span&gt;<span class="mspace" style="margin-right:0.2777777777777778em;">&lt;/span&gt;<span class="mrel">=</span>&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;</p>
+<p>当我们说一个方阵可以相似对角化的时候，等价于问: (1)
+T有n个线性无关的特征向量* (2)
+<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>V</mi><msub><mi>λ</mi><mn>1</mn></msub></msub><mo>⨁</mo><msub><mi>V</mi><msub><mi>λ</mi><mn>2</mn></msub></msub><mo>⨁</mo><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mo>⨁</mo><msub><mi>V</mi><msub><mi>λ</mi><mi>s</mi></msub></msub><mo>=</mo><msub><mi>V</mi><mi>n</mi></msub><mo stretchy="false">(</mo><mi>F</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">V_{<em>1}
+V</em>{<em>2} ... V</em>{_s} =
+V_n(F)</annotation></semantics></math></span><span class="katex-html"
+aria-hidden="true"><span class="base"><span class="strut"
+style="height:1.6000100000000002em;vertical-align:-0.55001em;"></span><span
+class="mord"><span class="mord mathdefault"
+style="margin-right:0.22222em;">V</span><span class="msupsub"><span
+class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist"
+style="height:0.33610799999999996em;"><span
+style="top:-2.5500000000000003em;margin-left:-0.22222em;margin-right:0.05em;"><span
+class="pstrut" style="height:2.7em;"></span><span
+class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span
+class="mord mtight"><span class="mord mathdefault mtight">λ</span><span
+class="msupsub"><span class="vlist-t vlist-t2"><span
+class="vlist-r"><span class="vlist"
+style="height:0.31731428571428577em;"><span
+style="top:-2.357em;margin-left:0em;margin-right:0.07142857142857144em;"><span
+class="pstrut" style="height:2.5em;"></span><span
+class="sizing reset-size3 size1 mtight"><span
+class="mord mtight">1</span></span></span></span><span
+class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+style="height:0.143em;"><span></span></span></span></span></span></span></span></span></span></span><span
+class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+style="height:0.2501em;"><span></span></span></span></span></span></span><span
+class="mspace" style="margin-right:0.16666666666666666em;"></span><span
+class="mop op-symbol large-op"
+style="position:relative;top:-0.000004999999999977245em;">⨁</span><span
+class="mspace" style="margin-right:0.16666666666666666em;"></span><span
+class="mord"><span class="mord mathdefault"
+style="margin-right:0.22222em;">V</span><span class="msupsub"><span
+class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist"
+style="height:0.33610799999999996em;"><span
+style="top:-2.5500000000000003em;margin-left:-0.22222em;margin-right:0.05em;"><span
+class="pstrut" style="height:2.7em;"></span><span
+class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span
+class="mord mtight"><span class="mord mathdefault mtight">λ</span><span
+class="msupsub"><span class="vlist-t vlist-t2"><span
+class="vlist-r"><span class="vlist"
+style="height:0.31731428571428577em;"><span
+style="top:-2.357em;margin-left:0em;margin-right:0.07142857142857144em;"><span
+class="pstrut" style="height:2.5em;"></span><span
+class="sizing reset-size3 size1 mtight"><span
+class="mord mtight">2</span></span></span></span><span
+class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+style="height:0.143em;"><span></span></span></span></span></span></span></span></span></span></span><span
+class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+style="height:0.2501em;"><span></span></span></span></span></span></span><span
+class="mspace" style="margin-right:0.16666666666666666em;"></span><span
+class="mop op-symbol large-op"
+style="position:relative;top:-0.000004999999999977245em;">⨁</span><span
+class="mspace" style="margin-right:0.16666666666666666em;"></span><span
+class="mord">.</span><span class="mord">.</span><span
+class="mord">.</span><span class="mspace"
+style="margin-right:0.16666666666666666em;"></span><span
+class="mop op-symbol large-op"
+style="position:relative;top:-0.000004999999999977245em;">⨁</span><span
+class="mspace" style="margin-right:0.16666666666666666em;"></span><span
+class="mord"><span class="mord mathdefault"
+style="margin-right:0.22222em;">V</span><span class="msupsub"><span
+class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist"
+style="height:0.33610799999999996em;"><span
+style="top:-2.5500000000000003em;margin-left:-0.22222em;margin-right:0.05em;"><span
+class="pstrut" style="height:2.7em;"></span><span
+class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span
+class="mord mtight"><span class="mord mathdefault mtight">λ</span><span
+class="msupsub"><span class="vlist-t vlist-t2"><span
+class="vlist-r"><span class="vlist"
+style="height:0.16454285714285719em;"><span
+style="top:-2.357em;margin-left:0em;margin-right:0.07142857142857144em;"><span
+class="pstrut" style="height:2.5em;"></span><span
+class="sizing reset-size3 size1 mtight"><span
+class="mord mathdefault mtight">s</span></span></span></span><span
+class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+style="height:0.143em;"><span></span></span></span></span></span></span></span></span></span></span><span
+class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+style="height:0.2501em;"><span></span></span></span></span></span></span><span
+class="mspace" style="margin-right:0.2777777777777778em;"></span><span
+class="mrel">=</span><span class="mspace"
+style="margin-right:0.2777777777777778em;"></span></span><span
+class="base"><span class="strut"
+style="height:1em;vertical-align:-0.25em;"></span><span
+class="mord"><span class="mord mathdefault"
+style="margin-right:0.22222em;">V</span><span class="msupsub"><span
+class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist"
+style="height:0.151392em;"><span
+style="top:-2.5500000000000003em;margin-left:-0.22222em;margin-right:0.05em;"><span
+class="pstrut" style="height:2.7em;"></span><span
+class="sizing reset-size6 size3 mtight"><span
+class="mord mathdefault mtight">n</span></span></span></span><span
+class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+style="height:0.15em;"><span></span></span></span></span></span></span><span
+class="mopen">(</span><span class="mord mathdefault"
+style="margin-right:0.13889em;">F</span><span
+class="mclose">)</span></span></span></span></span></p>
+<p>从定理2.3可以推出，上式成立的充分必要条件是，若<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>λ</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">_i</annotation></semantics></math></span><span
+class="katex-html" aria-hidden="true"><span class="base"><span
+class="strut"
+style="height:0.84444em;vertical-align:-0.15em;"></span><span
+class="mord"><span class="mord mathdefault">λ</span><span
+class="msupsub"><span class="vlist-t vlist-t2"><span
+class="vlist-r"><span class="vlist"
+style="height:0.31166399999999994em;"><span
+style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span
+class="pstrut" style="height:2.7em;"></span><span
+class="sizing reset-size6 size3 mtight"><span
+class="mord mathdefault mtight">i</span></span></span></span><span
+class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>
+是t的k_i重特征值,则必有</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mi>i</mi><mi>m</mi><msub><mi>V</mi><msub><mi>λ</mi><mi>i</mi></msub></msub><mo>=</mo><msub><mi>k</mi><mi>i</mi></msub><mspace width="1em"/><mi>i</mi><mo>=</mo><mn>1</mn><mo separator="true">,</mo><mn>2</mn><mo separator="true">,</mo><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mo separator="true">,</mo><mi>s</mi></mrow><annotation encoding="application/x-tex">dim
+V_{_i} = k_i i = 1,2,...,s</annotation></semantics></math></span><span
+class="katex-html" aria-hidden="true"><span class="base"><span
+class="strut"
+style="height:0.9445399999999999em;vertical-align:-0.2501em;"></span><span
+class="mord mathdefault">d</span><span
+class="mord mathdefault">i</span><span
+class="mord mathdefault">m</span><span class="mord"><span
+class="mord mathdefault" style="margin-right:0.22222em;">V</span><span
+class="msupsub"><span class="vlist-t vlist-t2"><span
+class="vlist-r"><span class="vlist"
+style="height:0.33610799999999996em;"><span
+style="top:-2.5500000000000003em;margin-left:-0.22222em;margin-right:0.05em;"><span
+class="pstrut" style="height:2.7em;"></span><span
+class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span
+class="mord mtight"><span class="mord mathdefault mtight">λ</span><span
+class="msupsub"><span class="vlist-t vlist-t2"><span
+class="vlist-r"><span class="vlist"
+style="height:0.3280857142857143em;"><span
+style="top:-2.357em;margin-left:0em;margin-right:0.07142857142857144em;"><span
+class="pstrut" style="height:2.5em;"></span><span
+class="sizing reset-size3 size1 mtight"><span
+class="mord mathdefault mtight">i</span></span></span></span><span
+class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+style="height:0.143em;"><span></span></span></span></span></span></span></span></span></span></span><span
+class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+style="height:0.2501em;"><span></span></span></span></span></span></span><span
+class="mspace" style="margin-right:0.2777777777777778em;"></span><span
+class="mrel">=</span><span class="mspace"
+style="margin-right:0.2777777777777778em;"></span></span><span
+class="base"><span class="strut"
+style="height:0.84444em;vertical-align:-0.15em;"></span><span
+class="mord"><span class="mord mathdefault"
+style="margin-right:0.03148em;">k</span><span class="msupsub"><span
+class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist"
+style="height:0.31166399999999994em;"><span
+style="top:-2.5500000000000003em;margin-left:-0.03148em;margin-right:0.05em;"><span
+class="pstrut" style="height:2.7em;"></span><span
+class="sizing reset-size6 size3 mtight"><span
+class="mord mathdefault mtight">i</span></span></span></span><span
+class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+style="height:0.15em;"><span></span></span></span></span></span></span><span
+class="mspace" style="margin-right:1em;"></span><span
+class="mord mathdefault">i</span><span class="mspace"
+style="margin-right:0.2777777777777778em;"></span><span
+class="mrel">=</span><span class="mspace"
+style="margin-right:0.2777777777777778em;"></span></span><span
+class="base"><span class="strut"
+style="height:0.8388800000000001em;vertical-align:-0.19444em;"></span><span
+class="mord">1</span><span class="mpunct">,</span><span class="mspace"
+style="margin-right:0.16666666666666666em;"></span><span
+class="mord">2</span><span class="mpunct">,</span><span class="mspace"
+style="margin-right:0.16666666666666666em;"></span><span
+class="mord">.</span><span class="mord">.</span><span
+class="mord">.</span><span class="mpunct">,</span><span class="mspace"
+style="margin-right:0.16666666666666666em;"></span><span
+class="mord mathdefault">s</span></span></span></span></span></p>
+<p>补充，关于特征多项式和最小多项式 方阵A的特征多项式：</p>
+<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="normal">Δ</mi><mi>A</mi></msub><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mi mathvariant="normal">∣</mi><mi>λ</mi><mi>I</mi><mo>−</mo><mi>A</mi><mi mathvariant="normal">∣</mi><mo>=</mo><mrow><mo fence="true">∣</mo><mtable rowspacing="0.15999999999999992em" columnalign="center center center center" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mi>λ</mi><mo>−</mo><msub><mi>a</mi><mn>11</mn></msub></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mn>0</mn><mo>−</mo><msub><mi>a</mi><mn>12</mn></msub></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mo lspace="0em" rspace="0em">⋯</mo></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mn>0</mn><mo>−</mo><msub><mi>a</mi><mrow><mn>1</mn><mi>n</mi></mrow></msub></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mn>0</mn><mo>−</mo><msub><mi>a</mi><mn>21</mn></msub></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mi>λ</mi><mo>−</mo><msub><mi>a</mi><mn>22</mn></msub></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mo lspace="0em" rspace="0em">⋯</mo></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mn>0</mn><mo>−</mo><msub><mi>a</mi><mrow><mn>2</mn><mi>n</mi></mrow></msub></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mi><mi mathvariant="normal">⋮</mi><mpadded height="+0em" voffset="0em"><mspace mathbackground="black" width="0em" height="1.5em"></mspace></mpadded></mi></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mi><mi mathvariant="normal">⋮</mi><mpadded height="+0em" voffset="0em"><mspace mathbackground="black" width="0em" height="1.5em"></mspace></mpadded></mi></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mo lspace="0em" rspace="0em">⋱</mo></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mi><mi mathvariant="normal">⋮</mi><mpadded height="+0em" voffset="0em"><mspace mathbackground="black" width="0em" height="1.5em"></mspace></mpadded></mi></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mn>0</mn><mo>−</mo><msub><mi>a</mi><mrow><mi>n</mi><mn>1</mn></mrow></msub></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mn>0</mn><mo>−</mo><msub><mi>a</mi><mrow><mi>n</mi><mn>2</mn></mrow></msub></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mo lspace="0em" rspace="0em">⋯</mo></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mi>λ</mi><mo>−</mo><msub><mi>a</mi><mrow><mi>n</mi><mi>n</mi></mrow></msub></mrow></mstyle></mtd></mtr></mtable><mo fence="true">∣</mo></mrow></mrow><annotation encoding="application/x-tex">_A(x)=|I-A|=|
+<span class="math display">\[\begin{array}{cccc}
+\lambda-a_{11} &amp;amp; 0-a_{12} &amp;amp; \cdots &amp;amp; 0-a_{1 n}
+\\
+0-a_{21} &amp;amp; \lambda-a_{22} &amp;amp; \cdots &amp;amp; 0-a_{2 n}
+\\
+\vdots &amp;amp; \vdots &amp;amp; \ddots &amp;amp; \vdots \\
+0-a_{n 1} &amp;amp; 0-a_{n 2} &amp;amp; \cdots &amp;amp; \lambda-a_{n n}
+\end{array}\]</span>
+<p>|</annotation></semantics></math></span><span class="katex-html"
+aria-hidden="true"><span class="base"><span class="strut"
+style="height:1em;vertical-align:-0.25em;"></span><span
+class="mord"><span class="mord">Δ</span><span class="msupsub"><span
+class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist"
+style="height:0.32833099999999993em;"><span
+style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span
+class="pstrut" style="height:2.7em;"></span><span
+class="sizing reset-size6 size3 mtight"><span
+class="mord mathdefault mtight">A</span></span></span></span><span
+class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+style="height:0.15em;"><span></span></span></span></span></span></span><span
+class="mopen">(</span><span class="mord mathdefault">x</span><span
+class="mclose">)</span><span class="mspace"
+style="margin-right:0.2777777777777778em;"></span><span
+class="mrel">=</span><span class="mspace"
+style="margin-right:0.2777777777777778em;"></span></span><span
+class="base"><span class="strut"
+style="height:1em;vertical-align:-0.25em;"></span><span
+class="mord">∣</span><span class="mord mathdefault">λ</span><span
+class="mord mathdefault" style="margin-right:0.07847em;">I</span><span
+class="mspace" style="margin-right:0.2222222222222222em;"></span><span
+class="mbin">−</span><span class="mspace"
+style="margin-right:0.2222222222222222em;"></span></span><span
+class="base"><span class="strut"
+style="height:1em;vertical-align:-0.25em;"></span><span
+class="mord mathdefault">A</span><span class="mord">∣</span><span
+class="mspace" style="margin-right:0.2777777777777778em;"></span><span
+class="mrel">=</span><span class="mspace"
+style="margin-right:0.2777777777777778em;"></span></span><span
+class="base"><span class="strut"
+style="height:5.4899450000000005em;vertical-align:-2.4799999999999995em;"></span><span
+class="minner"><span class="mopen"><span class="delimsizing mult"><span
+class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist"
+style="height:3.0099450000000005em;"><span
+style="top:-0.1559550000000005em;"><span class="pstrut"
+style="height:2.606em;"></span><span
+class="delimsizinginner delim-size1"><span>∣</span></span></span><span
+style="top:-0.7569550000000005em;"><span class="pstrut"
+style="height:2.606em;"></span><span
+class="delimsizinginner delim-size1"><span>∣</span></span></span><span
+style="top:-1.3579550000000005em;"><span class="pstrut"
+style="height:2.606em;"></span><span
+class="delimsizinginner delim-size1"><span>∣</span></span></span><span
+style="top:-1.9589550000000004em;"><span class="pstrut"
+style="height:2.606em;"></span><span
+class="delimsizinginner delim-size1"><span>∣</span></span></span><span
+style="top:-2.5599550000000004em;"><span class="pstrut"
+style="height:2.606em;"></span><span
+class="delimsizinginner delim-size1"><span>∣</span></span></span><span
+style="top:-3.1609550000000004em;"><span class="pstrut"
+style="height:2.606em;"></span><span
+class="delimsizinginner delim-size1"><span>∣</span></span></span><span
+style="top:-3.7619550000000004em;"><span class="pstrut"
+style="height:2.606em;"></span><span
+class="delimsizinginner delim-size1"><span>∣</span></span></span><span
+style="top:-4.362955em;"><span class="pstrut"
+style="height:2.606em;"></span><span
+class="delimsizinginner delim-size1"><span>∣</span></span></span><span
+style="top:-4.408945em;"><span class="pstrut"
+style="height:2.606em;"></span><span
+class="delimsizinginner delim-size1"><span>∣</span></span></span><span
+style="top:-5.009945em;"><span class="pstrut"
+style="height:2.606em;"></span><span
+class="delimsizinginner delim-size1"><span>∣</span></span></span></span><span
+class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+style="height:2.4500449999999994em;"><span></span></span></span></span></span></span><span
+class="mord"><span class="mtable"><span class="arraycolsep"
+style="width:0.5em;"></span><span class="col-align-c"><span
+class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist"
+style="height:2.9799999999999995em;"><span style="top:-5.8275em;"><span
+class="pstrut" style="height:3.6875em;"></span><span class="mord"><span
+class="mord mathdefault">λ</span><span class="mspace"
+style="margin-right:0.2222222222222222em;"></span><span
+class="mbin">−</span><span class="mspace"
+style="margin-right:0.2222222222222222em;"></span><span
+class="mord"><span class="mord mathdefault">a</span><span
+class="msupsub"><span class="vlist-t vlist-t2"><span
+class="vlist-r"><span class="vlist"
+style="height:0.30110799999999993em;"><span
+style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span
+class="pstrut" style="height:2.7em;"></span><span
+class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span
+class="mord mtight">1</span><span
+class="mord mtight">1</span></span></span></span></span><span
+class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+style="height:0.15em;"><span></span></span></span></span></span></span></span></span><span
+style="top:-4.6275em;"><span class="pstrut"
+style="height:3.6875em;"></span><span class="mord"><span
+class="mord">0</span><span class="mspace"
+style="margin-right:0.2222222222222222em;"></span><span
+class="mbin">−</span><span class="mspace"
+style="margin-right:0.2222222222222222em;"></span><span
+class="mord"><span class="mord mathdefault">a</span><span
+class="msupsub"><span class="vlist-t vlist-t2"><span
+class="vlist-r"><span class="vlist"
+style="height:0.30110799999999993em;"><span
+style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span
+class="pstrut" style="height:2.7em;"></span><span
+class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span
+class="mord mtight">2</span><span
+class="mord mtight">1</span></span></span></span></span><span
+class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+style="height:0.15em;"><span></span></span></span></span></span></span></span></span><span
+style="top:-2.7674999999999996em;"><span class="pstrut"
+style="height:3.6875em;"></span><span class="mord"><span
+class="mord"><span class="mord">⋮</span><span class="mord rule"
+style="border-right-width:0em;border-top-width:1.5em;bottom:0em;"></span></span></span></span><span
+style="top:-1.5675000000000006em;"><span class="pstrut"
+style="height:3.6875em;"></span><span class="mord"><span
+class="mord">0</span><span class="mspace"
+style="margin-right:0.2222222222222222em;"></span><span
+class="mbin">−</span><span class="mspace"
+style="margin-right:0.2222222222222222em;"></span><span
+class="mord"><span class="mord mathdefault">a</span><span
+class="msupsub"><span class="vlist-t vlist-t2"><span
+class="vlist-r"><span class="vlist"
+style="height:0.30110799999999993em;"><span
+style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span
+class="pstrut" style="height:2.7em;"></span><span
+class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span
+class="mord mathdefault mtight">n</span><span
+class="mord mtight">1</span></span></span></span></span><span
+class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span><span
+class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+style="height:2.4799999999999995em;"><span></span></span></span></span></span><span
+class="arraycolsep" style="width:0.5em;"></span><span
+class="arraycolsep" style="width:0.5em;"></span><span
+class="col-align-c"><span class="vlist-t vlist-t2"><span
+class="vlist-r"><span class="vlist"
+style="height:2.9799999999999995em;"><span style="top:-5.8275em;"><span
+class="pstrut" style="height:3.6875em;"></span><span class="mord"><span
+class="mord">0</span><span class="mspace"
+style="margin-right:0.2222222222222222em;"></span><span
+class="mbin">−</span><span class="mspace"
+style="margin-right:0.2222222222222222em;"></span><span
+class="mord"><span class="mord mathdefault">a</span><span
+class="msupsub"><span class="vlist-t vlist-t2"><span
+class="vlist-r"><span class="vlist"
+style="height:0.30110799999999993em;"><span
+style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span
+class="pstrut" style="height:2.7em;"></span><span
+class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span
+class="mord mtight">1</span><span
+class="mord mtight">2</span></span></span></span></span><span
+class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+style="height:0.15em;"><span></span></span></span></span></span></span></span></span><span
+style="top:-4.6275em;"><span class="pstrut"
+style="height:3.6875em;"></span><span class="mord"><span
+class="mord mathdefault">λ</span><span class="mspace"
+style="margin-right:0.2222222222222222em;"></span><span
+class="mbin">−</span><span class="mspace"
+style="margin-right:0.2222222222222222em;"></span><span
+class="mord"><span class="mord mathdefault">a</span><span
+class="msupsub"><span class="vlist-t vlist-t2"><span
+class="vlist-r"><span class="vlist"
+style="height:0.30110799999999993em;"><span
+style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span
+class="pstrut" style="height:2.7em;"></span><span
+class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span
+class="mord mtight">2</span><span
+class="mord mtight">2</span></span></span></span></span><span
+class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+style="height:0.15em;"><span></span></span></span></span></span></span></span></span><span
+style="top:-2.7674999999999996em;"><span class="pstrut"
+style="height:3.6875em;"></span><span class="mord"><span
+class="mord"><span class="mord">⋮</span><span class="mord rule"
+style="border-right-width:0em;border-top-width:1.5em;bottom:0em;"></span></span></span></span><span
+style="top:-1.5675000000000006em;"><span class="pstrut"
+style="height:3.6875em;"></span><span class="mord"><span
+class="mord">0</span><span class="mspace"
+style="margin-right:0.2222222222222222em;"></span><span
+class="mbin">−</span><span class="mspace"
+style="margin-right:0.2222222222222222em;"></span><span
+class="mord"><span class="mord mathdefault">a</span><span
+class="msupsub"><span class="vlist-t vlist-t2"><span
+class="vlist-r"><span class="vlist"
+style="height:0.30110799999999993em;"><span
+style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span
+class="pstrut" style="height:2.7em;"></span><span
+class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span
+class="mord mathdefault mtight">n</span><span
+class="mord mtight">2</span></span></span></span></span><span
+class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span><span
+class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+style="height:2.4799999999999995em;"><span></span></span></span></span></span><span
+class="arraycolsep" style="width:0.5em;"></span><span
+class="arraycolsep" style="width:0.5em;"></span><span
+class="col-align-c"><span class="vlist-t vlist-t2"><span
+class="vlist-r"><span class="vlist"
+style="height:2.9799999999999995em;"><span style="top:-5.64em;"><span
+class="pstrut" style="height:3.5em;"></span><span class="mord"><span
+class="minner">⋯</span></span></span><span style="top:-4.44em;"><span
+class="pstrut" style="height:3.5em;"></span><span class="mord"><span
+class="minner">⋯</span></span></span><span
+style="top:-2.5799999999999996em;"><span class="pstrut"
+style="height:3.5em;"></span><span class="mord"><span
+class="minner">⋱</span></span></span><span
+style="top:-1.3800000000000006em;"><span class="pstrut"
+style="height:3.5em;"></span><span class="mord"><span
+class="minner">⋯</span></span></span></span><span
+class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+style="height:2.4799999999999995em;"><span></span></span></span></span></span><span
+class="arraycolsep" style="width:0.5em;"></span><span
+class="arraycolsep" style="width:0.5em;"></span><span
+class="col-align-c"><span class="vlist-t vlist-t2"><span
+class="vlist-r"><span class="vlist"
+style="height:2.9799999999999995em;"><span style="top:-5.8275em;"><span
+class="pstrut" style="height:3.6875em;"></span><span class="mord"><span
+class="mord">0</span><span class="mspace"
+style="margin-right:0.2222222222222222em;"></span><span
+class="mbin">−</span><span class="mspace"
+style="margin-right:0.2222222222222222em;"></span><span
+class="mord"><span class="mord mathdefault">a</span><span
+class="msupsub"><span class="vlist-t vlist-t2"><span
+class="vlist-r"><span class="vlist"
+style="height:0.30110799999999993em;"><span
+style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span
+class="pstrut" style="height:2.7em;"></span><span
+class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span
+class="mord mtight">1</span><span
+class="mord mathdefault mtight">n</span></span></span></span></span><span
+class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+style="height:0.15em;"><span></span></span></span></span></span></span></span></span><span
+style="top:-4.6275em;"><span class="pstrut"
+style="height:3.6875em;"></span><span class="mord"><span
+class="mord">0</span><span class="mspace"
+style="margin-right:0.2222222222222222em;"></span><span
+class="mbin">−</span><span class="mspace"
+style="margin-right:0.2222222222222222em;"></span><span
+class="mord"><span class="mord mathdefault">a</span><span
+class="msupsub"><span class="vlist-t vlist-t2"><span
+class="vlist-r"><span class="vlist"
+style="height:0.30110799999999993em;"><span
+style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span
+class="pstrut" style="height:2.7em;"></span><span
+class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span
+class="mord mtight">2</span><span
+class="mord mathdefault mtight">n</span></span></span></span></span><span
+class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+style="height:0.15em;"><span></span></span></span></span></span></span></span></span><span
+style="top:-2.7674999999999996em;"><span class="pstrut"
+style="height:3.6875em;"></span><span class="mord"><span
+class="mord"><span class="mord">⋮</span><span class="mord rule"
+style="border-right-width:0em;border-top-width:1.5em;bottom:0em;"></span></span></span></span><span
+style="top:-1.5675000000000006em;"><span class="pstrut"
+style="height:3.6875em;"></span><span class="mord"><span
+class="mord mathdefault">λ</span><span class="mspace"
+style="margin-right:0.2222222222222222em;"></span><span
+class="mbin">−</span><span class="mspace"
+style="margin-right:0.2222222222222222em;"></span><span
+class="mord"><span class="mord mathdefault">a</span><span
+class="msupsub"><span class="vlist-t vlist-t2"><span
+class="vlist-r"><span class="vlist" style="height:0.151392em;"><span
+style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span
+class="pstrut" style="height:2.7em;"></span><span
+class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span
+class="mord mathdefault mtight">n</span><span
+class="mord mathdefault mtight">n</span></span></span></span></span><span
+class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span><span
+class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+style="height:2.4799999999999995em;"><span></span></span></span></span></span><span
+class="arraycolsep" style="width:0.5em;"></span></span></span><span
+class="mclose"><span class="delimsizing mult"><span
+class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist"
+style="height:3.0099450000000005em;"><span
+style="top:-0.1559550000000005em;"><span class="pstrut"
+style="height:2.606em;"></span><span
+class="delimsizinginner delim-size1"><span>∣</span></span></span><span
+style="top:-0.7569550000000005em;"><span class="pstrut"
+style="height:2.606em;"></span><span
+class="delimsizinginner delim-size1"><span>∣</span></span></span><span
+style="top:-1.3579550000000005em;"><span class="pstrut"
+style="height:2.606em;"></span><span
+class="delimsizinginner delim-size1"><span>∣</span></span></span><span
+style="top:-1.9589550000000004em;"><span class="pstrut"
+style="height:2.606em;"></span><span
+class="delimsizinginner delim-size1"><span>∣</span></span></span><span
+style="top:-2.5599550000000004em;"><span class="pstrut"
+style="height:2.606em;"></span><span
+class="delimsizinginner delim-size1"><span>∣</span></span></span><span
+style="top:-3.1609550000000004em;"><span class="pstrut"
+style="height:2.606em;"></span><span
+class="delimsizinginner delim-size1"><span>∣</span></span></span><span
+style="top:-3.7619550000000004em;"><span class="pstrut"
+style="height:2.606em;"></span><span
+class="delimsizinginner delim-size1"><span>∣</span></span></span><span
+style="top:-4.362955em;"><span class="pstrut"
+style="height:2.606em;"></span><span
+class="delimsizinginner delim-size1"><span>∣</span></span></span><span
+style="top:-4.408945em;"><span class="pstrut"
+style="height:2.606em;"></span><span
+class="delimsizinginner delim-size1"><span>∣</span></span></span><span
+style="top:-5.009945em;"><span class="pstrut"
+style="height:2.606em;"></span><span
+class="delimsizinginner delim-size1"><span>∣</span></span></span></span><span
+class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+style="height:2.4500449999999994em;"><span></span></span></span></span></span></span></span></span></span></span></span></p>
+<p>这里 一般都是<span class="katex"><span
+class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo>−</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">I
+-A</annotation></semantics></math></span><span class="katex-html"
+aria-hidden="true"><span class="base"><span class="strut"
+style="height:0.76666em;vertical-align:-0.08333em;"></span><span
+class="mord mathdefault" style="margin-right:0.07847em;">I</span><span
+class="mspace" style="margin-right:0.2222222222222222em;"></span><span
+class="mbin">−</span><span class="mspace"
+style="margin-right:0.2222222222222222em;"></span></span><span
+class="base"><span class="strut"
+style="height:0.68333em;vertical-align:0em;"></span><span
+class="mord mathdefault">A</span></span></span></span>
+.因为下面我们可以看到，对于幂等矩阵A,其特征值就是0或1，用I去减，得到的特征值仍然是1或0，故<span
+class="katex"><span
+class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo>−</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">I
+-A</annotation></semantics></math></span><span class="katex-html"
+aria-hidden="true"><span class="base"><span class="strut"
+style="height:0.76666em;vertical-align:-0.08333em;"></span><span
+class="mord mathdefault" style="margin-right:0.07847em;">I</span><span
+class="mspace" style="margin-right:0.2222222222222222em;"></span><span
+class="mbin">−</span><span class="mspace"
+style="margin-right:0.2222222222222222em;"></span></span><span
+class="base"><span class="strut"
+style="height:0.68333em;vertical-align:0em;"></span><span
+class="mord mathdefault">A</span></span></span></span>也是幂等矩阵，而<span
+class="katex"><span
+class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>−</mo><mi>I</mi></mrow><annotation encoding="application/x-tex">A-I
+</annotation></semantics></math></span><span class="katex-html"
+aria-hidden="true"><span class="base"><span class="strut"
+style="height:0.76666em;vertical-align:-0.08333em;"></span><span
+class="mord mathdefault">A</span><span class="mspace"
+style="margin-right:0.2222222222222222em;"></span><span
+class="mbin">−</span><span class="mspace"
+style="margin-right:0.2222222222222222em;"></span></span><span
+class="base"><span class="strut"
+style="height:0.68333em;vertical-align:0em;"></span><span
+class="mord mathdefault"
+style="margin-right:0.07847em;">I</span></span></span></span>则不是幂等矩阵。</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="normal">Δ</mi><mi>A</mi></msub><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mrow><mo fence="true">∣</mo><mi>x</mi><mi>E</mi><mo>−</mo><mi>A</mi><mo fence="true">∣</mo></mrow><mo>=</mo></mrow><annotation encoding="application/x-tex">_A(x)
+= |x E-A| =</annotation></semantics></math></span><span
+class="katex-html" aria-hidden="true"><span class="base"><span
+class="strut" style="height:1em;vertical-align:-0.25em;"></span><span
+class="mord"><span class="mord">Δ</span><span class="msupsub"><span
+class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist"
+style="height:0.32833099999999993em;"><span
+style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span
+class="pstrut" style="height:2.7em;"></span><span
+class="sizing reset-size6 size3 mtight"><span
+class="mord mathdefault mtight">A</span></span></span></span><span
+class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+style="height:0.15em;"><span></span></span></span></span></span></span><span
+class="mopen">(</span><span class="mord mathdefault">x</span><span
+class="mclose">)</span><span class="mspace"
+style="margin-right:0.2777777777777778em;"></span><span
+class="mrel">=</span><span class="mspace"
+style="margin-right:0.2777777777777778em;"></span></span><span
+class="base"><span class="strut"
+style="height:1em;vertical-align:-0.25em;"></span><span
+class="minner"><span class="mopen delimcenter"
+style="top:0em;">∣</span><span class="mord mathdefault">x</span><span
+class="mord mathdefault" style="margin-right:0.05764em;">E</span><span
+class="mspace" style="margin-right:0.2222222222222222em;"></span><span
+class="mbin">−</span><span class="mspace"
+style="margin-right:0.2222222222222222em;"></span><span
+class="mord mathdefault">A</span><span class="mclose delimcenter"
+style="top:0em;">∣</span></span><span class="mspace"
+style="margin-right:0.2777777777777778em;"></span><span
+class="mrel">=</span></span></span></span></span></p>
 
     
 
@@ -613,11 +1212,11 @@
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
+                <a href="javascript:void(0)" class="js-tag color3">English</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">reading</a>
+                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -629,7 +1228,7 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">English</a>
+                <a href="javascript:void(0)" class="js-tag color3">reading</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -638,6 +1237,14 @@
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">因果</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">MLDL</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">工具及入门</a>
               </li>
              
               <li class="article-tag-list-item">

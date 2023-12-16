@@ -6,21 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://hbyecoding.github.io">
-  <title>1因果推理初探 没有因果万万不能-DAGs | Hongbo Website</title>
+  <title>huggingface_2023_12_09 | Hongbo Website</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="人类对于多任务的轻易掌控，是基于人类长期的知识、经验和习惯形成的 研究因果关系最大的一个目标，就是找出事物之间真正的因果关系，去掉那些混杂的伪因果关系。 这里我们先简简单介绍一下脸上的巧克力与诺贝尔奖的例子有研究表明，巧克力消费量越高的国家出现诺贝尔奖得主的概率就会越高但我们拥有常识的话，可以考虑到，很可能巧克力消费量并不是导致诺贝尔奖得主数量的一个原因，或者说原因。 因为一些共鸣，让巧克力">
+  <meta name="description" content="需要install transformers 库 及拥有cuda 核心 pipeline 是hugging face 的基础工具，端到端的工具 12345from transformers import pipelineclassifier &#x3D; pipeline(&quot;sensiment-analysis&quot;)tes1 &#x3D; classifier(&quot;the book se">
 <meta property="og:type" content="article">
-<meta property="og:title" content="1因果推理初探 没有因果万万不能-DAGs">
-<meta property="og:url" content="https://hbyecoding.github.io/2023/11/24/causal1/index.html">
+<meta property="og:title" content="huggingface_2023_12_09">
+<meta property="og:url" content="https://hbyecoding.github.io/2023/12/09/huggingface-2023-12-09/index.html">
 <meta property="og:site_name" content="Hongbo Website">
-<meta property="og:description" content="人类对于多任务的轻易掌控，是基于人类长期的知识、经验和习惯形成的 研究因果关系最大的一个目标，就是找出事物之间真正的因果关系，去掉那些混杂的伪因果关系。 这里我们先简简单介绍一下脸上的巧克力与诺贝尔奖的例子有研究表明，巧克力消费量越高的国家出现诺贝尔奖得主的概率就会越高但我们拥有常识的话，可以考虑到，很可能巧克力消费量并不是导致诺贝尔奖得主数量的一个原因，或者说原因。 因为一些共鸣，让巧克力">
+<meta property="og:description" content="需要install transformers 库 及拥有cuda 核心 pipeline 是hugging face 的基础工具，端到端的工具 12345from transformers import pipelineclassifier &#x3D; pipeline(&quot;sensiment-analysis&quot;)tes1 &#x3D; classifier(&quot;the book se">
 <meta property="og:locale">
-<meta property="article:published_time" content="2023-11-23T16:09:26.000Z">
-<meta property="article:modified_time" content="2023-11-24T09:23:08.038Z">
+<meta property="article:published_time" content="2023-12-09T12:01:14.000Z">
+<meta property="article:modified_time" content="2023-12-09T12:22:11.126Z">
 <meta property="article:author" content="hongbo">
-<meta property="article:tag" content="因果">
+<meta property="article:tag" content="MLDL">
+<meta property="article:tag" content="工具及入门">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="Hongbo Website" type="application/atom+xml">
@@ -237,14 +238,14 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-causal1" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-huggingface-2023-12-09" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
   
   
     <h1 class="article-title" itemprop="name">
-      1因果推理初探 没有因果万万不能-DAGs
+      huggingface_2023_12_09
     </h1>
   
 
@@ -256,8 +257,8 @@
               <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
         </span>
 
-<a href="/2023/11/24/causal1/" class="archive-article-date">
-        <time datetime="2023-11-23T16:09:26.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-11-24</time>
+<a href="/2023/12/09/huggingface-2023-12-09/" class="archive-article-date">
+        <time datetime="2023-12-09T12:01:14.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-12-09</time>
 </a>
 
   
@@ -270,7 +271,7 @@
       <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
       <i class="icon-statistics"></i>
       <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">381字</span>
+      <span class="post-count">271字</span>
     </span>
   </span>
 
@@ -290,27 +291,15 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    <h1
-id="人类对于多任务的轻易掌控是基于人类长期的知识经验和习惯形成的">人类对于多任务的轻易掌控，是基于人类长期的知识、经验和习惯形成的</h1>
-<h3
-id="研究因果关系最大的一个目标就是找出事物之间真正的因果关系去掉那些混杂的伪因果关系">研究因果关系最大的一个目标，就是找出事物之间真正的因果关系，去掉那些混杂的伪因果关系。</h3>
-<p>这里我们先简简单介绍一下脸上的巧克力与诺贝尔奖的例子有研究表明，巧克力消费量越高的国家出现诺贝尔奖得主的概率就会越高但我们拥有常识的话，可以考虑到，很可能巧克力消费量并不是导致诺贝尔奖得主数量的一个原因，或者说原因。
-因为一些共鸣，让巧克力销量和诺贝尔奖产生了关联。这些共因我们猜测有可能是经济增长水平程度等等。
-假的例子或者说混淆抽烟的人容易，患肺癌头晕的人也容易出现黄手指因为抽烟这个共同原因，黄手指和肺癌产生了关联。我们不难发现手指黄的人，很多都容易被检测出肺癌，但我们不能说黄手指会导致肺癌，他俩并没有因果关系。这个共同原因也被称之为混杂因子（Confounder）。因此让黄手指这个explosure和肺癌outcome出现了一种伪相关，这种伪相关被称为
-bias。</p>
-<p>因果关系<span class="katex"><span
-class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>→</mo><mi>Y</mi></mrow><annotation encoding="application/x-tex">A
-Y</annotation></semantics></math></span><span class="katex-html"
-aria-hidden="true"><span class="base"><span class="strut"
-style="height:0.68333em;vertical-align:0em;"></span><span
-class="mord mathdefault">A</span><span class="mspace"
-style="margin-right:0.2777777777777778em;"></span><span
-class="mrel">→</span><span class="mspace"
-style="margin-right:0.2777777777777778em;"></span></span><span
-class="base"><span class="strut"
-style="height:0.68333em;vertical-align:0em;"></span><span
-class="mord mathdefault"
-style="margin-right:0.22222em;">Y</span></span></span></span>和差连接诱导的伪相关混合在一起</p>
+    <p>需要install transformers 库 及拥有cuda 核心 pipeline 是hugging face
+的基础工具，端到端的工具</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> transformers <span class="keyword">import</span> pipeline</span><br><span class="line">classifier = pipeline(<span class="string">&quot;sensiment-analysis&quot;</span>)</span><br><span class="line"></span><br><span class="line">tes1 = classifier(<span class="string">&quot;the book seems interesting!&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(tes1)</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(pipeline(<span class="string">&quot;sensiment-analysis&quot;</span>)(<span class="string">&quot;the book seems interesting!&quot;</span>))</span><br></pre></td></tr></table></figure>
+<p>需要注册一个huggingface账号, then You can create a repository from
+the CLI (skip if you created a repo from the website) <img
+src="https://pic1.zhimg.com/80/v2-34c7899303bf1b5014bef9864c924d52_1440w.png" /></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> transformers <span class="keyword">import</span> pipeline</span><br><span class="line"><span class="keyword">from</span> datasets <span class="keyword">import</span> load_dataset</span><br><span class="line"><span class="keyword">import</span> soundfile <span class="keyword">as</span> sf</span><br><span class="line"></span><br><span class="line">synthesiser = pipeline(<span class="string">&quot;text-to-speech&quot;</span>, <span class="string">&quot;microsoft/speecht5_tts&quot;</span>)</span><br><span class="line"></span><br><span class="line">embeddings_dataset = load_dataset(<span class="string">&quot;Matthijs/cmu-arctic-xvectors&quot;</span>, split=<span class="string">&quot;validation&quot;</span>)</span><br><span class="line">speaker_embedding = torch.tensor(embeddings_dataset[<span class="number">7306</span>][<span class="string">&quot;xvector&quot;</span>]).unsqueeze(<span class="number">0</span>)</span><br><span class="line"><span class="comment"># You can replace this embedding with your own as well.</span></span><br><span class="line"></span><br><span class="line">speech = synthesiser(<span class="string">&quot;Hello, my dog is cooler than you!&quot;</span>, forward_params=&#123;<span class="string">&quot;speaker_embeddings&quot;</span>: speaker_embedding&#125;)</span><br><span class="line"></span><br><span class="line">sf.write(<span class="string">&quot;speech.wav&quot;</span>, speech[<span class="string">&quot;audio&quot;</span>], samplerate=speech[<span class="string">&quot;sampling_rate&quot;</span>])</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> transformers <span class="keyword">import</span> SpeechT5Processor, SpeechT5ForTextToSpeech, SpeechT5HifiGan</span><br><span class="line"><span class="keyword">from</span> datasets <span class="keyword">import</span> load_dataset</span><br><span class="line"><span class="keyword">import</span> torch</span><br><span class="line"><span class="keyword">import</span> soundfile <span class="keyword">as</span> sf</span><br><span class="line"><span class="keyword">from</span> datasets <span class="keyword">import</span> load_dataset</span><br><span class="line"></span><br><span class="line">processor = SpeechT5Processor.from_pretrained(<span class="string">&quot;microsoft/speecht5_tts&quot;</span>)</span><br><span class="line">model = SpeechT5ForTextToSpeech.from_pretrained(<span class="string">&quot;microsoft/speecht5_tts&quot;</span>)</span><br><span class="line">vocoder = SpeechT5HifiGan.from_pretrained(<span class="string">&quot;microsoft/speecht5_hifigan&quot;</span>)</span><br><span class="line"></span><br><span class="line">inputs = processor(text=<span class="string">&quot;Hello, my dog is cute.&quot;</span>, return_tensors=<span class="string">&quot;pt&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># load xvector containing speaker&#x27;s voice characteristics from a dataset</span></span><br><span class="line">embeddings_dataset = load_dataset(<span class="string">&quot;Matthijs/cmu-arctic-xvectors&quot;</span>, split=<span class="string">&quot;validation&quot;</span>)</span><br><span class="line">speaker_embeddings = torch.tensor(embeddings_dataset[<span class="number">7306</span>][<span class="string">&quot;xvector&quot;</span>]).unsqueeze(<span class="number">0</span>)</span><br><span class="line"></span><br><span class="line">speech = model.generate_speech(inputs[<span class="string">&quot;input_ids&quot;</span>], speaker_embeddings, vocoder=vocoder)</span><br><span class="line"></span><br><span class="line">sf.write(<span class="string">&quot;speech.wav&quot;</span>, speech.numpy(), samplerate=<span class="number">16000</span>)</span><br></pre></td></tr></table></figure>
 
     
 
@@ -357,7 +346,7 @@ style="margin-right:0.22222em;">Y</span></span></span></span>和差连接诱导�
         </li>
         <li>
           <strong>本文链接：</strong>
-          <a href="https://hbyecoding.github.io/2023/11/24/causal1/" title="1因果推理初探 没有因果万万不能-DAGs" target="_blank">https://hbyecoding.github.io/2023/11/24/causal1/</a>
+          <a href="https://hbyecoding.github.io/2023/12/09/huggingface-2023-12-09/" title="huggingface_2023_12_09" target="_blank">https://hbyecoding.github.io/2023/12/09/huggingface-2023-12-09/</a>
         </li>
         
         <li>
@@ -379,7 +368,11 @@ style="margin-right:0.22222em;">Y</span></span></span></span>和差连接诱导�
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">因果</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">MLDL</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">工具及入门</a>
         		</li>
       		
 		</ul>
@@ -435,7 +428,7 @@ style="margin-right:0.22222em;">Y</span></span></span></span>和差连接诱导�
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-     <!-- <img src="//pan.baidu.com/share/qrcode?url=https://hbyecoding.github.io/2023/11/24/causal1/" alt="微信分享二维码"> -->
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=https://hbyecoding.github.io/2023/12/09/huggingface-2023-12-09/" alt="微信分享二维码"> -->
     </div>
 </div>
 
@@ -450,18 +443,18 @@ style="margin-right:0.22222em;">Y</span></span></span></span>和差连接诱导�
 
 <nav id="article-nav">
   
-    <a href="/2023/11/24/shizheng-2023-11-24/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2023/12/14/great-nation-note-0/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          shizheng_2023_11_24
+          大国大城 2023books8/20
         
       </div>
     </a>
   
   
-    <a href="/2023/11/23/million-books-2023-11-23/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">财务自由之路 博多 2023books5/20</div>
+    <a href="/2023/12/05/Procrastination-2023-12-05/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">拖延心理学 简·博克和莱诺拉·袁 2023books7/20</div>
       <i class="icon-circle-right"></i>
     </a>
   
